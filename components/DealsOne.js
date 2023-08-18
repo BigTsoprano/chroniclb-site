@@ -25,7 +25,7 @@ function DealsOne() {
       </div>
     </div>
   </div>
-<div className='pr-8 py-8'>
+<div className='px-8 py-8'>
   <img
     alt="weed_deal"
     src="weed_deal.jpeg"
