@@ -121,9 +121,10 @@ useEffect(() => {
       };
   }, [])
   return (
+    <div>
 <div className={navbar ? 'navbar active' : 'navbar'}>
     
-      <nav className={`navbar relative z-90 w-full md:static md:text-sm md:border-none ${state ? "shadow-lg rounded-b-xl md:shadow-none" : ""}`}>
+      <nav className={`navbar relative z-90 w-full md:static md:text-sm md:border-none ${state ? "shadow-lg rounded-b-xl md:shadow-none" : ""} ${navbar ? 'navbar active' : 'navbar'} `}>
         <div className="items-center gap-x-14 px-4 max-w-screen-xl mx-auto md:flex md:px-8">
             <div className="flex items-center justify-between py-3 md:py-5 md:block">
                 <a style={{display:'flex', flexDirection:'row', alignItems:'flex-end'}} className='' href="javascript:void(0)">
@@ -155,7 +156,7 @@ useEffect(() => {
                     </button>
                 </div>
             </div>
-            <div className={`nav-menu flex-1 pb-3 mt-8 md:block md:pb-0 md:mt-0 ${state ? 'block' : 'hidden'}`}>
+            <div className={`nav-menu  flex-1 pb-3 mt-8 md:block md:pb-0 md:mt-0 ${state ? 'block' : 'hidden'}`}>
                 <ul className="items-center space-y-6 md:flex md:space-x-6 md:space-y-0">
                     {
                         navigation.map((item, idx) => {
@@ -232,11 +233,16 @@ useEffect(() => {
             </div>
         </div>
     </nav>
+    </div>
     {
         state ? (
+          
             <div
                 className="z-10 fixed top-0 w-screen h-screen bg-black/20 backdrop-blur-sm md:hidden"
-                onClick={() => setState(false)}></div>
+                onClick={() => setState(false)}>
+                  
+                </div>
+                
         ) : ""
     }
 </div> 
