@@ -1,7 +1,8 @@
 import { Fragment } from 'react'
 import { Disclosure, Menu, Transition } from '@headlessui/react'
 import { Bars3Icon, BellIcon, XMarkIcon } from '@heroicons/react/24/outline'
-
+import useScrollTrigger from "@mui/material/useScrollTrigger";
+import Slide from "@mui/material/Slide";
 
 const navigation = [
   { name: 'blank', href: '#', current: true },
@@ -14,6 +15,16 @@ function classNames(...classes) {
   return classes.filter(Boolean).join(' ')
 }
 
+function HideOnScroll({ children }) {
+  const trigger = useScrollTrigger();
+  
+  return (
+    <Slide appear={false} direction={"down"} in={!trigger}>
+      {children}
+    </Slide>
+  );
+}
+
 const Navbar = () => {
 
 
@@ -21,7 +32,8 @@ const Navbar = () => {
     <Disclosure as="nav" className="bg-zinc-900">
     {({ open }) => (
       <>
-        <div style={{color:'#000'}} className="mx-auto max-w-7xl px-2 sm:px-6 bg-zinc-900 lg:px-8">
+      
+        <div style={{color:'#000'}} className="mx-auto py-2 max-w-7xl px-2 sm:px-6 bg-zinc-900 lg:px-8">
           <div className="relative flex h-16 items-center justify-between">
             <div className="absolute inset-y-0 left-0 flex items-center sm:hidden">
               {/* Mobile menu button*/}

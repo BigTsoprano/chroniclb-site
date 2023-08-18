@@ -3,6 +3,13 @@ import React from 'react'
 function DealsOne() {
   return (
 <section className="overflow-hidden bg-green-100 sm:grid sm:grid-cols-2">
+<div className='px-8 py-8'>
+  <img
+    alt="weed_deal"
+    src="weed_deal.jpeg"
+    className="h-56 w-full object-cover rounded-lg sm:h-full"
+  />
+  </div>
   <div className="p-8 md:p-12 lg:px-16 lg:py-24">
     <div
       className="mx-auto max-w-xl text-left ltr:sm:text-left rtl:sm:text-right"
@@ -25,13 +32,7 @@ function DealsOne() {
       </div>
     </div>
   </div>
-<div className='px-8 py-8'>
-  <img
-    alt="weed_deal"
-    src="weed_deal.jpeg"
-    className="h-56 w-full object-cover rounded-lg sm:h-full"
-  />
-  </div>
+
 </section>
   )
 }

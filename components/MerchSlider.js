@@ -44,9 +44,7 @@ function MerchSlider() {
           </span>
           <div className="h-1 ml-auto duration-300 origin-left transform bg-deep-purple-accent-400 scale-x-30 group-hover:scale-x-100" />
         </h2>
-        <p className="text-gray-700 lg:text-base lg:max-w-md">
-        Explore ChronicLB's official merchandise store – featuring the latest in premium-quality t-shirts, hoodies, shorts, and more. Showcase your love for cannabis culture with our uniquely designed apparel. Perfect for every enthusiast. Shop now and wear the ChronicLB vibe!"
-        </p>
+       
       </div>
       </div>
     <div style={{}} className="glide-04 pl-8 relative  w-full">

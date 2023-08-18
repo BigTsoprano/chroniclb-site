@@ -76,7 +76,16 @@ h3{
 .button{
    color:#030712;
 }
-
+.hero_backdrop{
+  background: rgba(0,0,0,.45);
+   
+    position: absolute;
+  height: 100%;
+  width: 100%;
+  z-index:3;
+  max-height: 100%;
+  top:0;
+}
 
 .swiper {
   width: 100%;
@@ -86,8 +95,8 @@ h3{
 .swiper-slide {
   text-align: center;
   font-size: 18px;
-  background: #fff;
-
+  background: #000;
+min-width: 300px;
   /* Center slide text vertically */
   display: flex;
   justify-content: center;
@@ -117,6 +126,28 @@ h3{
   overflow-x: scroll;
 }
 
+.product_one{
+  width: 100%;
+  list-style-type: none;
+  padding: 1px 16px 42px;
+  display: flex;
+  -webkit-box-pack: start;
+  justify-content: flex-start;
+  gap: 16px;
+  overflow-x: auto;
+  flex-direction: row;
+  
+}
+.product_1{
+  max-width: 320px;
+  min-width: 140px;
+  width: calc(16.6667% - 16px);
+  width: 100%;
+  min-height: 370px;
+  display: flex;
+  flex-direction: column;
+  
+}
 
 @media screen and (max-device-width: 640px) {
  

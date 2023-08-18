@@ -9,8 +9,8 @@ module.exports = {
    extend: {},
   },
   content: [
-   ,
+    "./node_modules/flowbite/**/*.js"
 ],
-  plugins: [],
+  plugins: [require('flowbite/plugin')],
   };
   
