@@ -11,7 +11,7 @@ function DealsOne() {
       ChronicLB Anniversary Deals!
       </h2>
 
-      <p className="hidden text-gray-700 font-semibold  md:mt-4 md:block">
+      <p className=" text-gray-700 font-semibold  md:mt-4 md:block">
       $59.99 Celebration Pack - 60% Off! Honor ChronicLB's anniversary with our newest pack release! Boasting 4 luxury items valued at $149.99, this pack features ChronicLB's signature 3.5g Jar, Elite Live Resin 1g Cartridge, & CLB Organic Vegan Gummies. Secure yours while supplies last!
       </p>
 

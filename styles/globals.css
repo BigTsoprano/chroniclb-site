@@ -101,6 +101,7 @@ h3{
 }
 .cat_section{
   padding: 0 2rem;
+  margin: 0 -16px;
 }
 .cat_btn{
   padding: 8px 16px;
