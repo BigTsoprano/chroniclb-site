@@ -1,7 +1,7 @@
 import React from 'react'
 import ShoppingCartOutlinedIcon from '@mui/icons-material/ShoppingCartOutlined';
 
-function ProductOne() {
+function ProductTwo() {
   return (
     <>
     <div className="pl-4 pt-8  sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:pl-24 lg:pl-8 ">
@@ -108,4 +108,4 @@ function ProductOne() {
   )
 }
 
-export default ProductOne
+export default ProductTwo

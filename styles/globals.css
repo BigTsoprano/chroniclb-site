@@ -127,7 +127,7 @@ min-width: 300px;
 }
 
 .product_one{
-  width: 100%;
+  width: auto;
   list-style-type: none;
   padding: 1px 16px 42px;
   display: flex;
@@ -139,10 +139,9 @@ min-width: 300px;
   
 }
 .product_1{
-  max-width: 320px;
+  
   min-width: 140px;
-  width: calc(16.6667% - 16px);
-  width: 100%;
+ max-width:100%;
   min-height: 370px;
   display: flex;
   flex-direction: column;
