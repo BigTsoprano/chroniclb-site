@@ -4,7 +4,7 @@ import React from 'react'
 function Categories() {
   return (
     <div className='cat_section'>
-        <div className='cat_wrapper'>
+        <div className='cat_wrapper pb-4'>
             <Link href='https://chroniclb.com/menu/'>
             <button className='cat_btn border border-black transition duration-100  hover:bg-green-800 hover:text-white text-sm font-bold'>
                 All

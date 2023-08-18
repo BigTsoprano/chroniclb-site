@@ -54,9 +54,9 @@ export default function Hero() {
       ></MuxVideo>
                 <img className="mr-2 lg:mr-12 mt-2 lg:mt-12 absolute right-0 top-0" src="https://tuk-cdn.s3.amazonaws.com/can-uploader/center_aligned_with_image-svg2.svg" alt="bg" />
                 <img className="ml-2 lg:ml-12 mb-2 lg:mb-12 absolute bottom-0 left-0" src="https://tuk-cdn.s3.amazonaws.com/can-uploader/center_aligned_with_image-svg3.svg" alt="bg" />
-                <div className="w-11/12 z-10 sm:w-2/3 mb-5 sm:mb-10">
+                <div className="w-11/12 z-10 mt-8 sm:w-2/3 mb-5 sm:mb-10">
                     <h1 className="font-sans z-10 text-3xl text-center font-bold tracking-tight text-white sm:text-4xl sm:leading-none">Welcome to <span className="text-green-200">Chronic </span>Long Beach</h1>
-                    <p className='text-zinc-200 mt-4 text-center text-sm '>Founded in 2010, Chronic Long Beach is one of Long Beach’s original medical cannabis dispensaries. At Chronic Long Beach, we’ve made it our mission to provide the best pain relief alternatives to pharmaceutical drugs by stocking high-quality, safe and legal cannabis products including flower, concentrates, edibles, and tinctures.</p>
+                    <p className='text-zinc-200 mt-4 text-center text-base '>Founded in 2010, Chronic Long Beach is one of Long Beach’s original medical cannabis dispensaries. At Chronic Long Beach, we’ve made it our mission to provide the best pain relief alternatives to pharmaceutical drugs by stocking high-quality, safe and legal cannabis products including flower, concentrates, edibles, and tinctures.</p>
                 </div>
                 <div className="flex z-10 justify-center items-center mb-10 sm:mb-20">
                     <button className="inline-flex mr-8 items-center justify-center h-12 gap-2 px-6 text-sm font-medium tracking-wide text-white transition duration-300 rounded whitespace-nowrap bg-green-700 hover:bg-emerald-600 focus:bg-emerald-700 focus-visible:outline-none disabled:cursor-not-allowed disabled:border-emerald-300 disabled:bg-emerald-300 disabled:shadow-none">Shop now</button>

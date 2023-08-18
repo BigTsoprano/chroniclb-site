@@ -147,6 +147,32 @@ min-width: 300px;
   flex-direction: column;
   
 }
+.navbar{
+  z-index: 20;
+  position: fixed;
+ width: 100%;
+
+
+}
+.navbar a{
+  color: #fff;
+}
+
+.navbar.active{
+background-color: #fff !important;
+color:#000;
+border-bottom: 1px solid #292929;
+}
+.navbar.active a{
+  color: #000;
+  font-weight: 500;
+  text-shadow: none;
+  
+}
+.navbar a:hover{
+   
+   
+}
 
 @media screen and (max-device-width: 640px) {
  

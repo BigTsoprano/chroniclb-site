@@ -6,6 +6,9 @@ import Gmaps from "@/components/Gmaps";
 import EndBanner from "@/components/EndBanner";
 import ProductOne from "@/components/ProductOne";
 import ProductTwo from "@/components/ProductTwo";
+import DealTwo from "@/components/DealTwo";
+import ProductThree from "@/components/ProductThree";
+import Blogs from "@/components/Blogs";
 
 
 
@@ -18,8 +21,11 @@ export default function Home() {
     <Categories/>
     <ProductOne/>
     <ProductTwo/>
+    <DealTwo/>
+    <ProductThree/>
     <DealsOne/>
     <MerchSlider/>
+    <Blogs/>
     <Gmaps/>
     <EndBanner/>
 

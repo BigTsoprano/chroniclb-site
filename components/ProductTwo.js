@@ -1,10 +1,10 @@
 import React from 'react'
 import ShoppingCartOutlinedIcon from '@mui/icons-material/ShoppingCartOutlined';
-
+import {motion} from 'framer-motion';
 function ProductTwo() {
   return (
     <>
-    <div className="pl-4 pt-8  sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:pl-24 lg:pl-8 ">
+    <div className="pl-4 pt-8 bg-zinc-100 sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:pl-24 lg:pl-8 ">
          <div className="flex flex-col  lg:justify-between lg:flex-row ">
         <h2 className="max-w-lg mb-5 font-sans text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl sm:leading-none md:mb-6 group">
           <span className="inline-blocksm:mb-4">
@@ -18,10 +18,10 @@ function ProductTwo() {
         </button>
       </div>
       </div>
-        <div className='w-full' style={{display:'block', }}>
-            <ul className='product_one w-full'>
+        <div className='w-full bg-zinc-100' style={{display:'block', }}>
+            <ul className='product_one w-full '>
            
-            <li className='product_1 rounded-xl w-full shadow-lg'>
+            <motion.li whileHover={{scale:1.05}} className='product_1 mt-4 rounded-xl bg-white w-full hover:shadow-xl shadow-lg'>
                     <img className='border-b rounded-t-xl' src='product1.avif' alt='product_one' />
                     <div style={{justifyContent:'space-between', height:'100%',maxHeight:'375px', display:'flex'}}className="flex-col p-4">
                         <div>
@@ -33,8 +33,8 @@ function ProductTwo() {
                 <button className="bg-green-800 text-white rounded-full px-2 py-2 mt-2"><ShoppingCartOutlinedIcon className="text-white"/></button>
                 </div>
             </div>
-                    </li>
-                    <li className='product_1 w-full rounded-xl shadow-lg'>
+                    </motion.li>
+                    <motion.li whileHover={{scale:1.05}} className='product_1 mt-4 rounded-xl bg-white w-full hover:shadow-xl shadow-lg'>
                     <img className='border-b rounded-t-xl' src='product1.avif' alt='product_one' />
                     <div style={{justifyContent:'space-between', height:'100%',maxHeight:'375px', display:'flex'}}className="flex-col p-4">
                         <div>
@@ -46,8 +46,8 @@ function ProductTwo() {
                 <button className="bg-green-800 text-white rounded-full px-2 py-2 mt-2"><ShoppingCartOutlinedIcon className="text-white"/></button>
                 </div>
             </div>
-                    </li>
-                    <li className='product_1 w-full rounded-xl shadow-lg'>
+                    </motion.li>
+                    <motion.li whileHover={{scale:1.05}} className='product_1 mt-4 rounded-xl bg-white w-full hover:shadow-xl shadow-lg'>
                     <img className='border-b rounded-t-xl' src='product1.avif' alt='product_one' />
                     <div style={{justifyContent:'space-between', height:'100%',maxHeight:'375px', display:'flex'}}className="flex-col p-4">
                         <div>
@@ -59,8 +59,8 @@ function ProductTwo() {
                 <button className="bg-green-800 text-white rounded-full px-2 py-2 mt-2"><ShoppingCartOutlinedIcon className="text-white"/></button>
                 </div>
             </div>
-                    </li>
-                    <li className='product_1 w-full rounded-xl shadow-lg'>
+                    </motion.li>
+                    <motion.li whileHover={{scale:1.05}} className='product_1 mt-4 rounded-xl bg-white w-full hover:shadow-xl shadow-lg'>
                     <img className='border-b rounded-t-xl' src='product1.avif' alt='product_one' />
                     <div style={{justifyContent:'space-between', height:'100%',maxHeight:'375px', display:'flex'}}className="flex-col p-4">
                         <div>
@@ -72,8 +72,8 @@ function ProductTwo() {
                 <button className="bg-green-800 text-white rounded-full px-2 py-2 mt-2"><ShoppingCartOutlinedIcon className="text-white"/></button>
                 </div>
             </div>
-                    </li>
-                    <li className='product_1 w-full rounded-xl shadow-lg'>
+                    </motion.li>
+                    <motion.li whileHover={{scale:1.05}} className='product_1 mt-4 rounded-xl bg-white w-full hover:shadow-xl shadow-lg'>
                     <img className='border-b rounded-t-xl' src='product1.avif' alt='product_one' />
                     <div style={{justifyContent:'space-between', height:'100%',maxHeight:'375px', display:'flex'}}className="flex-col p-4">
                         <div>
@@ -85,8 +85,8 @@ function ProductTwo() {
                 <button className="bg-green-800 text-white rounded-full px-2 py-2 mt-2"><ShoppingCartOutlinedIcon className="text-white"/></button>
                 </div>
             </div>
-                    </li>
-                    <li className='product_1 w-full rounded-xl shadow-lg'>
+                    </motion.li>
+                    <motion.li whileHover={{scale:1.05}} className='product_1 mt-4 rounded-xl bg-white w-full hover:shadow-xl shadow-lg'>
                     <img className='border-b rounded-t-xl' src='product1.avif' alt='product_one' />
                     <div style={{justifyContent:'space-between', height:'100%',maxHeight:'375px', display:'flex'}}className="flex-col p-4">
                         <div>
@@ -98,7 +98,7 @@ function ProductTwo() {
                 <button className="bg-green-800 text-white rounded-full px-2 py-2 mt-2"><ShoppingCartOutlinedIcon className="text-white"/></button>
                 </div>
             </div>
-                    </li>
+                    </motion.li>
                   
             </ul>
         </div>
