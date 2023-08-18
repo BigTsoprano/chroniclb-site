@@ -6,7 +6,7 @@ const Footer = () => {
 
 
     return (
-        <div style={{backgroundColor:'#18181B'}} className="relative mt-16 ">
+        <div style={{backgroundColor:'#18181B', position:'relative', bottom:'0'}} className="mt-16 ">
         <svg
           className="absolute  top-0 w-full h-6 -mt-5 sm:-mt-10 sm:h-16 text-deep-purple-accent-400"
           preserveAspectRatio="none"
