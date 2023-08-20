@@ -20,7 +20,7 @@ function Glider({ children }) {
           perView: 3,
         },
         640: {
-          perView: 2,
+          perView: 1.5,
         },
       },
     });

@@ -135,7 +135,7 @@ export default function Hero() {
 Long Beach Local Brands !!! 
           15 % off 
                     </h2>
-                    <div style={{display:'flex', flexDirection:'row'}} className="flex-row items-baseline justify-center">
+                    <div style={{display:'flex', flexDirection:'row'}} className="flex-row px-2 items-baseline justify-center">
                    <ul className="mb-8 list-disc max-w-md text-gray-9 mr-8  text-left">
                     <li>Top Shelf Cultivation</li>
                     <li>Clone Guy</li>
@@ -187,7 +187,7 @@ Long Beach Local Brands !!!
 Long Beach Local Brands !!! 
           15 % off 
                     </h2>
-                    <div style={{display:'flex', flexDirection:'row'}} className="flex-row items-baseline justify-center">
+                    <div style={{display:'flex', flexDirection:'row'}} className="flex-row px-2 items-baseline justify-center">
                    <ul className="mb-8 list-disc max-w-md text-gray-9 mr-8  text-left">
                     <li>Top Shelf Cultivation</li>
                     <li>Clone Guy</li>
@@ -240,7 +240,7 @@ Long Beach Local Brands !!!
 Long Beach Local Brands !!! 
           15 % off 
                     </h2>
-                    <div style={{display:'flex', flexDirection:'row'}} className="flex-row items-baseline justify-center">
+                    <div style={{display:'flex', flexDirection:'row'}} className="flex-row px-2 items-baseline justify-center">
                    <ul className="mb-8 list-disc max-w-md text-gray-9 mr-8  text-left">
                     <li>Top Shelf Cultivation</li>
                     <li>Clone Guy</li>
