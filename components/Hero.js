@@ -16,29 +16,15 @@ export default function Hero() {
       {/* Code block starts */}
 
       <div
-        style={{
-          width: "100%",
-          minWidth: "100%",
-          top: "0",
-          position: "relative",
-          height: "100%",
-        }}
-        className="hero_backdrop pt-8 mx-auto  bg-indigo-700 container  flex flex-col items-center  sm:pt-24 pb-24 sm:pb-32 md:pb-48 lg:pb-56 xl:pb-64"
+     
+        className="w-full min-w-full top-0 relative h-full pt-8 mx-auto  bg-zinc-800   flex flex-col items-center  sm:pt-24 pb-24 sm:pb-32 md:pb-48 lg:pb-56 xl:pb-64"
       >
         <div className="hero_backdrop"></div>
 
         <MuxVideo
           playbackId="00B02rzv6t00nBzaJdPPdlSmnNkvhbBN974BZFKFK00lAAI"
-          className="hero_video"
-          style={{
-            borderRadius: "0",
-            height: "100%",
-            width: "100%",
-            objectFit: "cover",
-            zIndex: "0",
-            position: "absolute",
-            top: "0",
-          }}
+          className="hero_video rounded-none h-full w-full object-cover z-0 absolute top-0"
+      
           metadata={{
             video_id: "video-id-12346",
             video_title: "demo_video",
@@ -109,8 +95,8 @@ export default function Hero() {
       </div>
       <div className=" mx-auto px-4 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 flex z-10 justify-center md:-mt-60 mb-10 -mt-20 sm:-mt-40">
         <div
-          style={{ minWidth: "100%", maxWidth: "100%",  }}
-          className="relative z-10 "
+          
+          className="relative z-10 min-w-full max-w-full"
         >
           <Swiper
             rewind={true}
@@ -135,8 +121,8 @@ export default function Hero() {
 Long Beach Local Brands !!! 
           15 % off 
                     </h2>
-                    <div style={{display:'flex', flexDirection:'row'}} className="flex-row px-2 items-baseline justify-center">
-                   <ul className="mb-8 list-disc max-w-md text-gray-9 mr-8  text-left">
+                    <div  className=" flex flex-row px-2 items-baseline justify-center">
+                   <ul className="mb-8 list-disc max-w-md text-gray-9 mr-8   text-left">
                     <li>Top Shelf Cultivation</li>
                     <li>Clone Guy</li>
                     <li>Lucy Goosey</li>
@@ -166,8 +152,8 @@ Long Beach Local Brands !!!
                   <div className="daily_deal_back order-first h-48 w-full bg-gray-700 sm:order-none sm:h-auto sm:w-1/2 lg:w-3/5">
                     <Image
                       src="/dail_deal.webp"
-                        width={1600}
-    height={900}
+                        width={800}
+    height={500}
     placeholder="blur"
     blurDataURL="URL"
                       loading="lazy"
@@ -191,7 +177,7 @@ Long Beach Local Brands !!!
 Long Beach Local Brands !!! 
           15 % off 
                     </h2>
-                    <div style={{display:'flex', flexDirection:'row'}} className="flex-row px-2 items-baseline justify-center">
+                    <div className="flex flex-row px-2 items-baseline justify-center">
                    <ul className="mb-8 list-disc max-w-md text-gray-9 mr-8  text-left">
                     <li>Top Shelf Cultivation</li>
                     <li>Clone Guy</li>
@@ -223,10 +209,10 @@ Long Beach Local Brands !!!
                   <div className="daily_deal_back order-first h-48 w-full bg-gray-700 sm:order-none sm:h-auto sm:w-1/2 lg:w-3/5">
                   <Image
                       src="/dail_deal.webp"
-                        width={1600}
-    height={900}
+                      width={800}
+                      height={500}
     placeholder="blur"
-    blurDataURL="URL"
+    blurDataURL="/dail_deal.webp"
                       loading="lazy"
                       alt="Chronic Long Beach daily deals"
                       className="h-full w-full object-contain flex object-center"
@@ -248,7 +234,7 @@ Long Beach Local Brands !!!
 Long Beach Local Brands !!! 
           15 % off 
                     </h2>
-                    <div style={{display:'flex', flexDirection:'row'}} className="flex-row px-2 items-baseline justify-center">
+                    <div className="flex flex-row px-2 items-baseline justify-center">
                    <ul className="mb-8 list-disc max-w-md text-gray-9 mr-8  text-left">
                     <li>Top Shelf Cultivation</li>
                     <li>Clone Guy</li>
@@ -280,8 +266,8 @@ Long Beach Local Brands !!!
                   <div className="daily_deal_back order-first h-48 w-full bg-gray-700 sm:order-none sm:h-auto sm:w-1/2 lg:w-3/5">
                   <Image
                       src="/dail_deal.webp"
-                        width={1600}
-                         height={900}
+                        width={800}
+                         height={500}
                       loading="lazy"
                       placeholder="blur"
                         blurDataURL="URL"

@@ -13,7 +13,7 @@ class Gmaps extends Component{
       
     };
   return (
-<section style={{height:'50vh', maxHeight:'50vh', overflow:'hidden'}}>
+<section className='h-[50vh] max-h-[50vh] overflow-hidden'>
     <div>
         <Map
         

@@ -2,7 +2,7 @@ import React from 'react'
 
 function EndBanner() {
   return (
-    <section style={{marginBottom:'-3rem'}} className="py-28 relative">
+    <section className="py-28 -mb-12 relative">
     <div className="relative z-10 max-w-screen-xl mx-auto px-4 justify-between items-center gap-12 md:px-8 md:flex">
         <div className="flex-1 max-w-lg">
             <h3 className="text-3xl font-bold">

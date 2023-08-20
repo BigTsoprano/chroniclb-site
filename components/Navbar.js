@@ -4,6 +4,7 @@ import React, { useState, useEffect } from "react";
 import useScrollTrigger from "@mui/material/useScrollTrigger";
 import Slide from "@mui/material/Slide";
 import Link from "next/link";
+import Image from "next/image";
 
 import SearchOutlinedIcon from '@mui/icons-material/SearchOutlined';
 import dynamic from 'next/dynamic';
@@ -56,7 +57,7 @@ function Navbar(props) {
         aria-label="Company"
         title="Company"
       > </a>
-       <img src='chronic_leaf.png' width={40} height={40}/>
+       <Image loading="lazy" alt="chronic long beach logo" placeholder="blur" blurDataURL="/chronic_leaf.png" src='/chronic_leaf.png' width={40} height={40}/>
         
         <a className="chronic_title ml-2 text-xl font-bold tracking-wide text-gray-800">
           Chronic
