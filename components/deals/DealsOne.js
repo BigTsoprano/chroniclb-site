@@ -1,13 +1,17 @@
-import React from 'react'
+import Image from "next/image"
 
 function DealsOne() {
   return (
     <div className='w-full bg-green-100 '>
 <div className="overflow-hidden  sm:grid sm:grid-cols-2 px-4 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8">
 <div className='pr-8 py-8'>
-  <img
+  <Image
     alt="weed_deal"
-    src="weed_deal.jpeg"
+    width={677}
+    height={492}
+    placeholder="blur"
+    blurDataURL="/weed_deal.webp"
+    src="/weed_deal.webp"
     className="h-56 w-full object-cover rounded-lg sm:h-full"
   />
   </div>

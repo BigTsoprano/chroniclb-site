@@ -1,14 +1,19 @@
-import React from 'react'
+import Image from "next/image"
 
 function Blogs() {
   return (
     <div className="px-4 bg-zinc-100 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
     <div className="grid gap-8 lg:grid-cols-3 sm:max-w-sm sm:mx-auto lg:max-w-full">
       <div className="overflow-hidden transition-shadow duration-300 bg-white rounded-xl shadow-md hover:shadow-2xl">
-        <img
-          src="blog1.jpeg"
+      <Image
+          src="/blog1.webp"
+          width={525}
+          height={350}
+          loading='lazy'
+          placeholder="blur"
+          blurDataURL="/blog1.webp"
           className="object-cover w-full h-64"
-          alt=""
+          alt=" SKATE CULTURE AND CANNABIS: A GLOBAL PHENOMENON"
         />
         <div className="p-5 border border-t-0">
           <p className="mb-3 text-xs font-semibold tracking-wide uppercase">
@@ -61,10 +66,15 @@ function Blogs() {
         </div>
       </div>
       <div className="overflow-hidden transition-shadow duration-300 bg-white rounded-xl shadow-md hover:shadow-2xl">
-        <img
-          src="blog2.jpeg"
+      <Image
+          src="/blog2.webp"
+          width={525}
+          height={350}
+          loading='lazy'
+          placeholder="blur"
+          blurDataURL="/blog2.webp"
           className="object-cover w-full h-64"
-          alt=""
+          alt=" SKATE CULTURE AND CANNABIS: A GLOBAL PHENOMENON"
         />
         <div className="p-5 border border-t-0">
           <p className="mb-3 text-xs font-semibold tracking-wide uppercase">
@@ -117,10 +127,15 @@ CHRONIC'S COMPLETE GUIDE TO CANNABIS IN LONG BEACH
         </div>
       </div>
       <div className="overflow-hidden transition-shadow duration-300 bg-white rounded-xl  shadow-md hover:shadow-2xl">
-        <img
-          src="blog3.jpeg"
+        <Image
+          src="/blog3.webp"
+          width={525}
+          height={350}
+          loading='lazy'
+          placeholder="blur"
+          blurDataURL="/blog3.webp"
           className="object-cover w-full h-64"
-          alt=""
+          alt="CHRONIC'S COMPLETE GUIDE TO CANNABIS IN LONG BEACH"
         />
         <div className="p-5 border border-t-0">
           <p className="mb-3 text-xs font-semibold tracking-wide uppercase">

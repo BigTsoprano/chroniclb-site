@@ -1,6 +1,8 @@
 import React from "react"
-import Glider from '../Elements/Glider'
-import { motion } from "framer-motion"
+import dynamic from 'next/dynamic';
+
+// Dynamically import the Glider component
+const Glider = dynamic(() => import('../Elements/Glider'));import { motion } from "framer-motion"
 import AddIcon from '@mui/icons-material/Add';
 
 function ProductTwo() {

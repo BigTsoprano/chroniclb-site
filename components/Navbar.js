@@ -3,11 +3,14 @@
 import React, { useState, useEffect } from "react";
 import useScrollTrigger from "@mui/material/useScrollTrigger";
 import Slide from "@mui/material/Slide";
-import NavDrop from "./Elements/NavDrop";
 import Link from "next/link";
-import NavMob from "./Elements/NavMob";
-import SearchOutlinedIcon from '@mui/icons-material/SearchOutlined';
 
+import SearchOutlinedIcon from '@mui/icons-material/SearchOutlined';
+import dynamic from 'next/dynamic';
+
+
+const NavDrop = dynamic(() => import('./Elements/NavDrop'));
+const NavMob = dynamic(() => import('./Elements/NavMob'));
 
 function HideOnScroll({ children }) {
     const trigger = useScrollTrigger();

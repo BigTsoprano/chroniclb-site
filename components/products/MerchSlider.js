@@ -1,7 +1,11 @@
 import React from "react"
 import ShoppingCartCheckoutIcon from '@mui/icons-material/ShoppingCartCheckout';
 import Link from 'next/link'
-import Glider from '../Elements/Glider'
+import dynamic from 'next/dynamic';
+import Image from "next/image";
+
+// Dynamically import the Glider component
+const Glider = dynamic(() => import('../Elements/Glider'));
 import { motion } from "framer-motion"
 function MerchSlider() {
   
@@ -27,10 +31,252 @@ function MerchSlider() {
 
           <li 
             className='product_one_shadow shadow-lg relative rounded-xl mt-2 mb-4'>
-                <motion.img 
+                <Image 
                     whileHover={{scale: 1.1}}
-                    src="chroniclb_tshirt.png"
-                    alt="Product" 
+                    height={530}
+                    width={425}
+                    placeholder="blur"
+                    blurDataURL="/chroniclb_tshirt.webp"
+                    src="/chroniclb_tshirt.webp"
+                    alt="chronic long beach merch" 
+                    className="h-60 w-52 mx-auto object-contain rounded-t-xl  " 
+                />
+                <div className="px-4 border-t py-3 min-w-20 max-w-72">
+                    <span className="text-gray-400 mr-3 uppercase text-xs">Chroniclb merch</span>
+                    <p className="text-lg font-bold text-black truncate block capitalize">Chroniclb t-shirt</p>
+                    <p className="text-sm text-zinc-700">Material: cotton</p>
+                    <div className="flex items-center">
+                        <p className="text-lg font-semibold text-black cursor-auto my-3">$20.00</p>
+                        <del>
+                            <p className="text-sm text-gray-600 cursor-auto ml-2">$29.99</p>
+                        </del>
+                        <Link href="http://localhost:3000/t-shirt">
+
+                        <motion.button 
+                        whileHover={{scale: 1.2}}
+                        whileTap={{scale: 0.8}}
+                        className=" px-4 py-4 bg-green-700 absolute bottom-5 right-5 font-semibold shadow-lg rounded-full text-white">
+                          <ShoppingCartCheckoutIcon />
+                        </motion.button>
+                        </Link>
+
+                    </div>
+                </div>
+            </li>
+            <li 
+            className='product_one_shadow shadow-lg relative rounded-xl mt-2 mb-4'>
+                <Image 
+                    whileHover={{scale: 1.1}}
+                    height={530}
+                    width={425}
+                    placeholder="blur"
+                    blurDataURL="/chroniclb_tshirt.webp"
+                    src="/chroniclb_tshirt.webp"
+                    alt="chronic long beach merch" 
+                    className="h-60 w-52 mx-auto object-contain rounded-t-xl  " 
+                />
+                <div className="px-4 border-t py-3 min-w-20 max-w-72">
+                    <span className="text-gray-400 mr-3 uppercase text-xs">Chroniclb merch</span>
+                    <p className="text-lg font-bold text-black truncate block capitalize">Chroniclb t-shirt</p>
+                    <p className="text-sm text-zinc-700">Material: cotton</p>
+                    <div className="flex items-center">
+                        <p className="text-lg font-semibold text-black cursor-auto my-3">$20.00</p>
+                        <del>
+                            <p className="text-sm text-gray-600 cursor-auto ml-2">$29.99</p>
+                        </del>
+                        <Link href="http://localhost:3000/t-shirt">
+
+                        <motion.button 
+                        whileHover={{scale: 1.2}}
+                        whileTap={{scale: 0.8}}
+                        className=" px-4 py-4 bg-green-700 absolute bottom-5 right-5 font-semibold shadow-lg rounded-full text-white">
+                          <ShoppingCartCheckoutIcon />
+                        </motion.button>
+                        </Link>
+
+                    </div>
+                </div>
+            </li>
+            <li 
+            className='product_one_shadow shadow-lg relative rounded-xl mt-2 mb-4'>
+                <Image 
+                    whileHover={{scale: 1.1}}
+                    height={530}
+                    width={425}
+                    placeholder="blur"
+                    blurDataURL="/chroniclb_tshirt.webp"
+                    src="/chroniclb_tshirt.webp"
+                    alt="chronic long beach merch" 
+                    className="h-60 w-52 mx-auto object-contain rounded-t-xl  " 
+                />
+                <div className="px-4 border-t py-3 min-w-20 max-w-72">
+                    <span className="text-gray-400 mr-3 uppercase text-xs">Chroniclb merch</span>
+                    <p className="text-lg font-bold text-black truncate block capitalize">Chroniclb t-shirt</p>
+                    <p className="text-sm text-zinc-700">Material: cotton</p>
+                    <div className="flex items-center">
+                        <p className="text-lg font-semibold text-black cursor-auto my-3">$20.00</p>
+                        <del>
+                            <p className="text-sm text-gray-600 cursor-auto ml-2">$29.99</p>
+                        </del>
+                        <Link href="http://localhost:3000/t-shirt">
+
+                        <motion.button 
+                        whileHover={{scale: 1.2}}
+                        whileTap={{scale: 0.8}}
+                        className=" px-4 py-4 bg-green-700 absolute bottom-5 right-5 font-semibold shadow-lg rounded-full text-white">
+                          <ShoppingCartCheckoutIcon />
+                        </motion.button>
+                        </Link>
+
+                    </div>
+                </div>
+            </li>
+            <li 
+            className='product_one_shadow shadow-lg relative rounded-xl mt-2 mb-4'>
+                <Image 
+                    whileHover={{scale: 1.1}}
+                    height={530}
+                    width={425}
+                    placeholder="blur"
+                    blurDataURL="/chroniclb_tshirt.webp"
+                    src="/chroniclb_tshirt.webp"
+                    alt="chronic long beach merch" 
+                    className="h-60 w-52 mx-auto object-contain rounded-t-xl  " 
+                />
+                <div className="px-4 border-t py-3 min-w-20 max-w-72">
+                    <span className="text-gray-400 mr-3 uppercase text-xs">Chroniclb merch</span>
+                    <p className="text-lg font-bold text-black truncate block capitalize">Chroniclb t-shirt</p>
+                    <p className="text-sm text-zinc-700">Material: cotton</p>
+                    <div className="flex items-center">
+                        <p className="text-lg font-semibold text-black cursor-auto my-3">$20.00</p>
+                        <del>
+                            <p className="text-sm text-gray-600 cursor-auto ml-2">$29.99</p>
+                        </del>
+                        <Link href="http://localhost:3000/t-shirt">
+
+                        <motion.button 
+                        whileHover={{scale: 1.2}}
+                        whileTap={{scale: 0.8}}
+                        className=" px-4 py-4 bg-green-700 absolute bottom-5 right-5 font-semibold shadow-lg rounded-full text-white">
+                          <ShoppingCartCheckoutIcon />
+                        </motion.button>
+                        </Link>
+
+                    </div>
+                </div>
+            </li>
+            <li 
+            className='product_one_shadow shadow-lg relative rounded-xl mt-2 mb-4'>
+                <Image 
+                    whileHover={{scale: 1.1}}
+                    height={530}
+                    width={425}
+                    placeholder="blur"
+                    blurDataURL="/chroniclb_tshirt.webp"
+                    src="/chroniclb_tshirt.webp"
+                    alt="chronic long beach merch" 
+                    className="h-60 w-52 mx-auto object-contain rounded-t-xl  " 
+                />
+                <div className="px-4 border-t py-3 min-w-20 max-w-72">
+                    <span className="text-gray-400 mr-3 uppercase text-xs">Chroniclb merch</span>
+                    <p className="text-lg font-bold text-black truncate block capitalize">Chroniclb t-shirt</p>
+                    <p className="text-sm text-zinc-700">Material: cotton</p>
+                    <div className="flex items-center">
+                        <p className="text-lg font-semibold text-black cursor-auto my-3">$20.00</p>
+                        <del>
+                            <p className="text-sm text-gray-600 cursor-auto ml-2">$29.99</p>
+                        </del>
+                        <Link href="http://localhost:3000/t-shirt">
+
+                        <motion.button 
+                        whileHover={{scale: 1.2}}
+                        whileTap={{scale: 0.8}}
+                        className=" px-4 py-4 bg-green-700 absolute bottom-5 right-5 font-semibold shadow-lg rounded-full text-white">
+                          <ShoppingCartCheckoutIcon />
+                        </motion.button>
+                        </Link>
+
+                    </div>
+                </div>
+            </li>
+            <li 
+            className='product_one_shadow shadow-lg relative rounded-xl mt-2 mb-4'>
+                <Image 
+                    whileHover={{scale: 1.1}}
+                    height={530}
+                    width={425}
+                    placeholder="blur"
+                    blurDataURL="/chroniclb_tshirt.webp"
+                    src="/chroniclb_tshirt.webp"
+                    alt="chronic long beach merch" 
+                    className="h-60 w-52 mx-auto object-contain rounded-t-xl  " 
+                />
+                <div className="px-4 border-t py-3 min-w-20 max-w-72">
+                    <span className="text-gray-400 mr-3 uppercase text-xs">Chroniclb merch</span>
+                    <p className="text-lg font-bold text-black truncate block capitalize">Chroniclb t-shirt</p>
+                    <p className="text-sm text-zinc-700">Material: cotton</p>
+                    <div className="flex items-center">
+                        <p className="text-lg font-semibold text-black cursor-auto my-3">$20.00</p>
+                        <del>
+                            <p className="text-sm text-gray-600 cursor-auto ml-2">$29.99</p>
+                        </del>
+                        <Link href="http://localhost:3000/t-shirt">
+
+                        <motion.button 
+                        whileHover={{scale: 1.2}}
+                        whileTap={{scale: 0.8}}
+                        className=" px-4 py-4 bg-green-700 absolute bottom-5 right-5 font-semibold shadow-lg rounded-full text-white">
+                          <ShoppingCartCheckoutIcon />
+                        </motion.button>
+                        </Link>
+
+                    </div>
+                </div>
+            </li>
+            <li 
+            className='product_one_shadow shadow-lg relative rounded-xl mt-2 mb-4'>
+                <Image 
+                    whileHover={{scale: 1.1}}
+                    height={530}
+                    width={425}
+                    placeholder="blur"
+                    blurDataURL="/chroniclb_tshirt.webp"
+                    src="/chroniclb_tshirt.webp"
+                    alt="chronic long beach merch" 
+                    className="h-60 w-52 mx-auto object-contain rounded-t-xl  " 
+                />
+                <div className="px-4 border-t py-3 min-w-20 max-w-72">
+                    <span className="text-gray-400 mr-3 uppercase text-xs">Chroniclb merch</span>
+                    <p className="text-lg font-bold text-black truncate block capitalize">Chroniclb t-shirt</p>
+                    <p className="text-sm text-zinc-700">Material: cotton</p>
+                    <div className="flex items-center">
+                        <p className="text-lg font-semibold text-black cursor-auto my-3">$20.00</p>
+                        <del>
+                            <p className="text-sm text-gray-600 cursor-auto ml-2">$29.99</p>
+                        </del>
+                        <Link href="http://localhost:3000/t-shirt">
+
+                        <motion.button 
+                        whileHover={{scale: 1.2}}
+                        whileTap={{scale: 0.8}}
+                        className=" px-4 py-4 bg-green-700 absolute bottom-5 right-5 font-semibold shadow-lg rounded-full text-white">
+                          <ShoppingCartCheckoutIcon />
+                        </motion.button>
+                        </Link>
+
+                    </div>
+                </div>
+            </li>
+            <li 
+            className='product_one_shadow shadow-lg relative rounded-xl mt-2 mb-4'>
+                <Image 
+                    whileHover={{scale: 1.1}}
+                    height={530}
+                    width={425}
+                    placeholder="blur"
+                    blurDataURL="/chroniclb_tshirt.webp"
+                    src="/chroniclb_tshirt.webp"
+                    alt="chronic long beach merch" 
                     className="h-60 w-52 mx-auto object-contain rounded-t-xl  " 
                 />
                 <div className="px-4 border-t py-3 min-w-20 max-w-72">

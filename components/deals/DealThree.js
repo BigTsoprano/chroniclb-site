@@ -1,6 +1,4 @@
-import React from 'react'
-import { motion } from "framer-motion"
-
+import Image from 'next/image'
 function DealThree() {
   return (
     <section className='w-full bg-zinc-100'>
@@ -12,9 +10,14 @@ function DealThree() {
           <ul className="grid grid-cols-2 gap-4">
             <li>
               <a href="#" className="block group">
-                <img
-                  src="stiiizy_one.avif"
-                  alt=""
+                <Image
+                width={500}
+                height={500}
+                loading='lazy'
+                placeholder='blur'
+                blurDataURL='/stiiizy_one.avif'
+                  src="/stiiizy_one.avif"
+                  alt="chronic long beach stiiizy vapes"
                   className="object-cover w-full rounded aspect-square"
                 />
   
@@ -39,9 +42,14 @@ function DealThree() {
   
             <li>
               <a href="#" className="block group">
-                <img
-                  src="stiiizy_two.avif"
-                  alt=""
+                <Image
+                width={500}
+                height={500}
+                placeholder='blur'
+                blurDataURL='/stiiizy_two.avif'
+                loading='lazy'
+                  src="/stiiizy_two.avif"
+                  alt="chronic lb stiizy best deals"
                   className="object-cover w-full rounded aspect-square"
                 />
   
