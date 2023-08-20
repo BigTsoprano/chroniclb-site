@@ -1,13 +1,14 @@
 import React, { useEffect } from "react"
 import Glide from "@glidejs/glide"
 import {motion} from 'framer-motion'
+import Image from "next/image"
 
 
 function Category() {
     useEffect(() => {
         const slider = new Glide(".glide-01", {
           type: "carousel",
-          focusAt: "center",
+          focusAt: "0",
           perView: 5,
           autoplay: false,
           animationDuration: 700,
@@ -19,10 +20,10 @@ function Category() {
           },
           breakpoints: {
             1024: {
-              perView: 2,
+              perView: 3,
             },
             640: {
-              perView: 1,
+              perView: 2,
             },
           },
         }).mount()
@@ -34,95 +35,162 @@ function Category() {
   return (
     <>
       {/*<!-- Component: Carousel with controls inside --> */}
-      <div className="glide-01 relative px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20  w-full">
+      <div className="glide-01 relative px-2 py-8 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-12 lg:px-4 lg:py-10  w-full">
         {/*    <!-- Slides --> */}
-        <div className="overflow-hidden mx-10 " data-glide-el="track">
+        <div className="overflow-hidden mx-2 " data-glide-el="track">
   <ul className="whitespace-no-wrap  flex-no-wrap [backface-visibility: hidden] [transform-style: preserve-3d] [touch-action: pan-Y] [will-change: transform] relative flex w-full overflow-hidden p-0">
     <li className="relative rounded-lg    flex items-center justify-center">
       <div className="absolute inset-0  rounded-lg bg-black opacity-40"></div>
-      <h1 className="absolute z-10 text-white  font-sans text-3xl font-bold tracking-tight text-center">Shop all</h1>
-      <img
-        src="shop_all.png"
+      <h1 className="absolute z-10 text-white font-sans sm:text-3xl text-xl font-bold tracking-tight text-center">Shop all</h1>
+
+      <Image
+       placeholder="blur"
+       blurDataURL="URL"
+       width={700}
+         height={500}
+                         loading="lazy"
+                         alt="Chronic Long Beach shop all"
+        src="/shop_all.webp"
         className="m-auto max-h-full rounded-lg w-full max-w-full"
       />
     </li>
     <li className="relative flex rounded-lg items-center justify-center">
       <div className="absolute inset-0 rounded-lg bg-black hover:opacity-50 opacity-40"></div>
-      <h1 className="absolute font-sans text-3xl font-bold tracking-tight z-10 text-white text-center">Flower</h1>
-      <img
-        src="shop_flower.png"
+      <h1 className="absolute z-10 text-white font-sans sm:text-3xl text-xl font-bold tracking-tight text-center">Flower</h1>
+      <Image
+         placeholder="blur"
+         blurDataURL="URL"
+         width={700}
+           height={500}
+                           loading="lazy"
+                           alt="Chronic Long Beach shop flower"
+        src="/shop_flower.webp"
         className="m-auto max-h-full rounded-lg w-full max-w-full"
       />
     </li>
     <li className="relative flex  rounded-lg items-center justify-center">
       <div className="absolute inset-0 rounded-lg bg-black opacity-40"></div>
-      <h1 className="absolute z-10 font-sans text-3xl font-bold tracking-tight text-white text-center">Preroll</h1>
-      <img
-        src="shop_preroll.png"
+      <h1 className="absolute z-10 text-white font-sans sm:text-3xl text-xl font-bold tracking-tight text-center">Preroll</h1>
+      <Image
+         placeholder="blur"
+         blurDataURL="URL"
+         width={700}
+           height={500}
+                           loading="lazy"
+                           alt="Chronic Long Beach shop preroll"
+        src="/shop_preroll.webp"
         className="m-auto max-h-full rounded-lg w-full max-w-full"
       />
     </li>
     <li className="relative flex items-center rounded-lg justify-center">
       <div className="absolute rounded-lg inset-0 bg-black opacity-40"></div>
-      <h1 className="absolute z-10 font-sans text-3xl font-bold tracking-tight rounded-lg text-white text-center">Vapes</h1>
-      <img
-        src="shop_vape.png"
+      <h1 className="absolute z-10 text-white font-sans sm:text-3xl text-xl font-bold tracking-tight text-center">Vapes</h1>
+      <Image 
+         placeholder="blur"
+         blurDataURL="URL"
+         width={700}
+           height={500}
+                           loading="lazy"
+                           alt="Chronic Long Beach shop vapes"
+        src="/shop_vape.webp"
         className="m-auto max-h-full rounded-lg w-full max-w-full"
       />
     </li>
     <li className="relative flex rounded-lg items-center justify-center">
       <div className="absolute rounded-lg inset-0 bg-black opacity-40"></div>
-      <h1 className="absolute font-sans text-3xl font-bold tracking-tight z-10 text-white text-center">Concentrates</h1>
-      <img
-        src="shop_dabs.png"
+      <h1 className="absolute z-10 text-white font-sans sm:text-3xl text-xl font-bold tracking-tight text-center">Concentrates</h1>
+      <Image
+         placeholder="blur"
+         blurDataURL="URL"
+         width={700}
+           height={500}
+                           loading="lazy"
+                           alt="Chronic Long Beach shop concentrates"
+        src="/shop_dabs.webp"
         className="m-auto max-h-full rounded-lg w-full max-w-full"
       />
     </li>
     <li className="relative flex rounded-lg items-center justify-center">
       <div className="absolute rounded-lg inset-0 bg-black opacity-40"></div>
-      <h1 className="absolute font-sans text-3xl font-bold tracking-tight z-10 text-white text-center">Edibles</h1>
-      <img
-        src="shop_edibles.png"
+      <h1 className="absolute z-10 text-white font-sans sm:text-3xl text-xl font-bold tracking-tight text-center">Edibles</h1>
+      <Image
+         placeholder="blur"
+         blurDataURL="URL"
+         width={700}
+           height={500}
+                           loading="lazy"
+                           alt="Chronic Long Beach shop edibles"
+        src="/shop_edibles.webp"
         className="m-auto max-h-full rounded-lg w-full max-w-full"
       />
     </li>
     <li className="relative flex rounded-lg items-center justify-center">
       <div className="absolute rounded-lg inset-0 bg-black opacity-40"></div>
-      <h1 className="absolute font-sans text-3xl font-bold tracking-tight z-10 text-white text-center">Tablets</h1>
-      <img
-        src="shop_pill.png"
+      <h1 className="absolute z-10 text-white font-sans sm:text-3xl text-xl font-bold tracking-tight text-center">Tablets</h1>
+      <Image
+         placeholder="blur"
+         blurDataURL="URL"
+         width={700}
+           height={500}
+                           loading="lazy"
+                           alt="Chronic Long Beach shop tablets"
+        src="/shop_pill.webp"
         className="m-auto max-h-full rounded-lg w-full max-w-full"
       />
     </li>
     <li className="relative flex rounded-lg items-center justify-center">
       <div className="absolute rounded-lg inset-0 bg-black opacity-40"></div>
-      <h1 className="absolute font-sans text-3xl font-bold tracking-tight z-10 text-white text-center">Tinctures</h1>
-      <img
-        src="shop_tincture.png"
+      <h1 className="absolute z-10 text-white font-sans sm:text-3xl text-xl font-bold tracking-tight text-center">Tinctures</h1>
+      <Image
+         placeholder="blur"
+         blurDataURL="URL"
+         width={700}
+           height={500}
+                           loading="lazy"
+                           alt="Chronic Long Beach shop tinctures"
+        src="/shop_tincture.webp"
         className="m-auto max-h-full rounded-lg w-full max-w-full"
       />
     </li>
     <li className="relative flex rounded-lg items-center justify-center">
       <div className="absolute rounded-lg inset-0 bg-black opacity-40"></div>
-      <h1 className="absolute font-sans text-3xl font-bold tracking-tight z-10 text-white text-center">Topicals</h1>
-      <img
-        src="shop_topical.png"
+      <h1 className="absolute z-10 text-white font-sans sm:text-3xl text-xl font-bold tracking-tight text-center">Topicals</h1>
+      <Image  
+       placeholder="blur"
+       blurDataURL="URL"
+       width={700}
+         height={500}
+                         loading="lazy"
+                         alt="Chronic Long Beach shop topicals"
+        src="/shop_topical.webp"
         className="m-auto max-h-full rounded-lg w-full max-w-full"
       />
     </li>
     <li className="relative flex rounded-lg items-center justify-center">
       <div className="absolute rounded-lg inset-0 bg-black opacity-40"></div>
-      <h1 className="absolute font-sans text-3xl font-bold tracking-tight z-10 text-white text-center">Drinks</h1>
-      <img
-        src="shop_drink.png"
+      <h1 className="absolute z-10 text-white font-sans sm:text-3xl text-xl font-bold tracking-tight text-center">Drinks</h1>
+      <Image   
+      placeholder="blur"
+       blurDataURL="URL"
+       width={700}
+         height={500}
+                         loading="lazy"
+                         alt="Chronic Long Beach shop drinks"
+        src="/shop_drink.webp"
         className="m-auto max-h-full rounded-lg w-full max-w-full"
       />
     </li>
     <li className="relative flex rounded-lg items-center justify-center">
       <div className="absolute rounded-lg inset-0 bg-black opacity-40"></div>
-      <h1 className="absolute font-sans text-3xl font-bold tracking-tight z-10 text-white text-center">Clones</h1>
-      <img
-        src="shop_clone.png"
+      <h1 className="absolute z-10 text-white font-sans sm:text-3xl text-xl font-bold tracking-tight text-center">Clones</h1>
+      <Image
+         placeholder="blur"
+         blurDataURL="URL"
+         width={700}
+           height={500}
+                           loading="lazy"
+                           alt="Chronic Long Beach shop clones"
+        src="/shop_clone.webp"
         className="m-auto max-h-full rounded-lg w-full max-w-full"
       />
     </li>

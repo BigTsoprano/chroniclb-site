@@ -1,15 +1,18 @@
 
+import dynamic from 'next/dynamic';
+
+
 import Hero from "@/components/Hero";
 import MerchSlider from "@/components/products/MerchSlider";
 import DealsOne from "@/components/deals/DealsOne";
-import Gmaps from "@/components/Gmaps";
+const Gmaps = dynamic(() => import("@/components/Gmaps"));
 import EndBanner from "@/components/EndBanner";
 import ProductOne from "@/components/products/ProductOne";
 import ProductTwo from "@/components/products/ProductTwo";
 import DealTwo from "@/components/deals/DealTwo";
 import ProductThree from "@/components/products/ProductThree";
 import Blogs from "@/components/Blogs";
-import CustomerReviews from "@/components/CustomerReviews";
+const CustomerReviews = dynamic(() => import("@/components/CustomerReviews"));
 import DealThree from "@/components/deals/DealThree";
 import Category from "@/components/Category";
 import ProductFour from "@/components/products/ProductFour";

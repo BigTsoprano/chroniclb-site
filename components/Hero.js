@@ -1,4 +1,3 @@
-"use client"
 
 import React, { useRef, useState } from "react";
 // Import Swiper React components
@@ -9,6 +8,7 @@ import "swiper/css";
 import "swiper/css/navigation";
 import MuxVideo from "@mux/mux-video-react";
 import { Navigation, Autoplay } from "swiper/modules";
+import Image from "next/image";
 
 export default function Hero() {
   return (
@@ -52,7 +52,7 @@ export default function Hero() {
           playsInline
           loop
         ></MuxVideo>
-        <img
+        {/* <img
           className="mr-2 lg:mr-12 mt-2 lg:mt-12 absolute right-0 top-0"
           src="https://tuk-cdn.s3.amazonaws.com/can-uploader/center_aligned_with_image-svg2.svg"
           alt="bg"
@@ -61,7 +61,7 @@ export default function Hero() {
           className="ml-2 lg:ml-12 mb-2 lg:mb-12 absolute bottom-0 left-0"
           src="https://tuk-cdn.s3.amazonaws.com/can-uploader/center_aligned_with_image-svg3.svg"
           alt="bg"
-        />
+        /> */}
         <div className="w-11/12 z-10 mt-10 sm:w-2/3 mb-5 sm:mb-10">
           <h1 className="font-sans z-10 text-3xl text-center font-bold tracking-tight text-white sm:text-4xl sm:leading-none">
             Welcome to Chronic Long
@@ -164,10 +164,14 @@ Long Beach Local Brands !!!
                   {/* content - end */}
                   {/* image - start */}
                   <div className="daily_deal_back order-first h-48 w-full bg-gray-700 sm:order-none sm:h-auto sm:w-1/2 lg:w-3/5">
-                    <img
-                      src="dail_deal.png"
+                    <Image
+                      src="/dail_deal.webp"
+                        width={1600}
+    height={900}
+    placeholder="blur"
+    blurDataURL="URL"
                       loading="lazy"
-                      alt="Photo by Dom Hill"
+                      alt="Chronic Long Beach daily deals"
                       className="h-full w-full object-contain flex object-center"
                     />
                   </div>
@@ -217,10 +221,14 @@ Long Beach Local Brands !!!
                   {/* content - end */}
                   {/* image - start */}
                   <div className="daily_deal_back order-first h-48 w-full bg-gray-700 sm:order-none sm:h-auto sm:w-1/2 lg:w-3/5">
-                    <img
-                      src="dail_deal.png"
+                  <Image
+                      src="/dail_deal.webp"
+                        width={1600}
+    height={900}
+    placeholder="blur"
+    blurDataURL="URL"
                       loading="lazy"
-                      alt="Photo by Dom Hill"
+                      alt="Chronic Long Beach daily deals"
                       className="h-full w-full object-contain flex object-center"
                     />
                   </div>
@@ -270,10 +278,14 @@ Long Beach Local Brands !!!
                   {/* content - end */}
                   {/* image - start */}
                   <div className="daily_deal_back order-first h-48 w-full bg-gray-700 sm:order-none sm:h-auto sm:w-1/2 lg:w-3/5">
-                    <img
-                      src="dail_deal.png"
+                  <Image
+                      src="/dail_deal.webp"
+                        width={1600}
+                         height={900}
                       loading="lazy"
-                      alt="Photo by Dom Hill"
+                      placeholder="blur"
+                        blurDataURL="URL"
+                      alt="Chronic Long Beach daily deals"
                       className="h-full w-full object-contain flex object-center"
                     />
                   </div>
