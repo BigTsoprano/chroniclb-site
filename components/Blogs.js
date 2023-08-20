@@ -2,9 +2,9 @@ import React from 'react'
 
 function Blogs() {
   return (
-    <div className="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
+    <div className="px-4 bg-zinc-100 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
     <div className="grid gap-8 lg:grid-cols-3 sm:max-w-sm sm:mx-auto lg:max-w-full">
-      <div className="overflow-hidden transition-shadow duration-300 bg-white rounded shadow-sm">
+      <div className="overflow-hidden transition-shadow duration-300 bg-white rounded-xl shadow-md hover:shadow-2xl">
         <img
           src="blog1.jpeg"
           className="object-cover w-full h-64"
@@ -20,8 +20,8 @@ function Blogs() {
             >
               traveling
             </a> */}
-            <span className="text-gray-600">— 28 Dec 2020</span>
           </p>
+            <span className="text-gray-600">— 28 Dec 2020</span>
           <a
             href="/"
             aria-label="Category"
@@ -34,16 +34,33 @@ function Blogs() {
             Sed ut perspiciatis unde omnis iste natus error sit sed quia
             consequuntur magni voluptatem doloremque.
           </p> */}
-          <a
-            href="/"
-            aria-label=""
-            className="inline-flex items-center font-semibold transition-colors duration-200 text-deep-purple-accent-400 hover:text-deep-purple-800"
-          >
-            Learn more
-          </a>
+         <button  className="group relative inline-flex items-center overflow-hidden rounded-lg border border-current px-7 py-3 text-green-600 hover:text-green-500 focus:outline-none focus:ring active:text-green-200"
+  href="/download"
+>
+  <span className="absolute -end-full transition-all group-hover:end-4">
+    <svg
+      className="h-5 w-5 rtl:rotate-180"
+      xmlns="http://www.w3.org/2000/svg"
+      fill="none"
+      viewBox="0 0 24 24"
+      stroke="currentColor"
+    >
+      <path
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        strokeWidth="2"
+        d="M17 8l4 4m0 0l-4 4m4-4H3"
+      />
+    </svg>
+  </span>
+
+  <span className="text-base font-medium transition-all group-hover:me-4">
+    Learn more
+  </span>
+          </button>
         </div>
       </div>
-      <div className="overflow-hidden transition-shadow duration-300 bg-white rounded shadow-sm">
+      <div className="overflow-hidden transition-shadow duration-300 bg-white rounded-xl shadow-md hover:shadow-2xl">
         <img
           src="blog2.jpeg"
           className="object-cover w-full h-64"
@@ -59,8 +76,8 @@ function Blogs() {
             >
               traveling
             </a> */}
-            <span className="text-gray-600">— 28 Dec 2020</span>
           </p>
+            <span className="text-gray-600">— 28 Dec 2020</span>
           <a
             href="/"
             aria-label="Category"
@@ -73,16 +90,33 @@ CHRONIC'S COMPLETE GUIDE TO CANNABIS IN LONG BEACH
             Sed ut perspiciatis unde omnis iste natus error sit sed quia
             consequuntur magni voluptatem doloremque.
           </p> */}
-          <a
-            href="/"
-            aria-label=""
-            className="inline-flex items-center font-semibold transition-colors duration-200 text-deep-purple-accent-400 hover:text-deep-purple-800"
-          >
-            Learn more
-          </a>
+            <button  className="group relative inline-flex items-center overflow-hidden rounded-lg border border-current px-7 py-3 text-green-600 hover:text-green-500 focus:outline-none focus:ring active:text-green-200"
+  href="/download"
+>
+  <span className="absolute -end-full transition-all group-hover:end-4">
+    <svg
+      className="h-5 w-5 rtl:rotate-180"
+      xmlns="http://www.w3.org/2000/svg"
+      fill="none"
+      viewBox="0 0 24 24"
+      stroke="currentColor"
+    >
+      <path
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        strokeWidth="2"
+        d="M17 8l4 4m0 0l-4 4m4-4H3"
+      />
+    </svg>
+  </span>
+
+  <span className="text-base font-medium transition-all group-hover:me-4">
+    Learn more
+  </span>
+          </button>
         </div>
       </div>
-      <div className="overflow-hidden transition-shadow duration-300 bg-white rounded shadow-sm">
+      <div className="overflow-hidden transition-shadow duration-300 bg-white rounded-xl  shadow-md hover:shadow-2xl">
         <img
           src="blog3.jpeg"
           className="object-cover w-full h-64"
@@ -98,8 +132,8 @@ CHRONIC'S COMPLETE GUIDE TO CANNABIS IN LONG BEACH
             >
               traveling
             </a> */}
-            <span className="text-gray-600">— 28 Dec 2020</span>
           </p>
+            <span className="text-gray-600">— 28 Dec 2020</span>
           <a
             href="/"
             aria-label="Category"
@@ -112,13 +146,30 @@ HOW TO FIND THE BEST DISPENSARY IN LONG BEACH
             Sed ut perspiciatis unde omnis iste natus error sit sed quia
             consequuntur magni voluptatem doloremque.
           </p> */}
-          <a
-            href="/"
-            aria-label=""
-            className="inline-flex items-center font-semibold transition-colors duration-200 text-deep-purple-accent-400 hover:text-deep-purple-800"
-          >
-            Learn more
-          </a>
+       <button  className="group relative inline-flex items-center overflow-hidden rounded-lg border border-current px-7 py-3 text-green-600 hover:text-green-500 focus:outline-none focus:ring active:text-green-200"
+  href="/download"
+>
+  <span className="absolute -end-full transition-all group-hover:end-4">
+    <svg
+      className="h-5 w-5 rtl:rotate-180"
+      xmlns="http://www.w3.org/2000/svg"
+      fill="none"
+      viewBox="0 0 24 24"
+      stroke="currentColor"
+    >
+      <path
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        strokeWidth="2"
+        d="M17 8l4 4m0 0l-4 4m4-4H3"
+      />
+    </svg>
+  </span>
+
+  <span className="text-base font-medium transition-all group-hover:me-4">
+    Learn more
+  </span>
+          </button>
         </div>
       </div>
     </div>

@@ -2,8 +2,9 @@ import React from 'react'
 
 function DealsOne() {
   return (
-<section className="overflow-hidden bg-green-100 sm:grid sm:grid-cols-2">
-<div className='px-8 py-8'>
+    <div className='w-full bg-green-100 '>
+<div className="overflow-hidden  sm:grid sm:grid-cols-2 px-4 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8">
+<div className='pr-8 py-8'>
   <img
     alt="weed_deal"
     src="weed_deal.jpeg"
@@ -25,15 +26,15 @@ function DealsOne() {
       <div className="mt-4 md:mt-8">
         <a
           href="#"
-          className="inline-block rounded bg-green-800 px-12 py-3 text-sm font-medium text-white transition hover:bg-emerald-700 focus:outline-none focus:ring focus:ring-yellow-400"
+          className="inline-block mr-4 hover:bg-green-500 rounded-lg bg-green-700 px-8 py-3 text-base font-medium text-white transition hover:scale-110 hover:shadow-xl focus:outline-none focus:ring active:bg-green-200"
         >
           Learn more
         </a>
       </div>
     </div>
   </div>
-
-</section>
+</div>
+</div>
   )
 }
 

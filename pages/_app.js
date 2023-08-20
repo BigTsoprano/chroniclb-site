@@ -12,7 +12,9 @@ export default function App({ Component, pageProps }) {
 
         <title>Chroniclb | </title>
         <meta property="og:title" content="" key="title" />
-      </Head>      <Component {...pageProps} />
+      </Head>     
+       <Component {...pageProps} />
+       
      
       
 
