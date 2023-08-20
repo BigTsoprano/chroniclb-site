@@ -109,7 +109,7 @@ export default function Hero() {
       </div>
       <div className=" mx-auto px-4 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 flex z-10 justify-center md:-mt-60 mb-10 -mt-20 sm:-mt-40">
         <div
-          style={{ minWidth: "100%", maxWidth: "100%", padding: "0 2rem" }}
+          style={{ minWidth: "100%", maxWidth: "100%",  }}
           className="relative z-10 "
         >
           <Swiper
