@@ -1,7 +1,7 @@
 import Layout from '@/components/Layout'
 import '@/styles/globals.css'
 import Script from 'next/script'
-import SEO from './next-seo.config';
+import SEO from '../next-seo.config';
 import { DefaultSeo } from 'next-seo'; // <-- Import this
 
 
