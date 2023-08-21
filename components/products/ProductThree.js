@@ -3,8 +3,8 @@ import {motion} from 'framer-motion'
 import AddIcon from '@mui/icons-material/Add';
 
 // Dynamically import the Glider component
-import Glider from '../Elements/Glider';
-
+import dynamic from 'next/dynamic';
+const Glider = dynamic(() => import('../Elements/Glider'));
 function ProductThree() {
   return (
     <>
