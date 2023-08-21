@@ -223,62 +223,7 @@ Long Beach Local Brands !!!
                 </div>
               </div>
             </SwiperSlide>
-            <SwiperSlide className="rounded-xl ">
-              <div className="mx-auto ">
-                <div className="flex flex-col w-full overflow-hidden rounded-lg bg-white sm:flex-row h-full">
-                  {/* content - start */}
-                  <div className="flex w-full flex-col p-4 sm:w-1/2 sm:p-8 lg:w-2/5">
-                    <h2 className="mb-4 text-xl  font-bold text-black md:text-2xl lg:text-4xl">
-                    "Locals Only"
-                                          <br />
-                     
-Long Beach Local Brands !!! 
-          15 % off 
-                    </h2>
-                    <div className="flex flex-row px-2 items-baseline justify-center">
-                   <ul className="mb-8 list-disc max-w-md text-gray-9 mr-8  text-left">
-                    <li>Top Shelf Cultivation</li>
-                    <li>Clone Guy</li>
-                    <li>Lucy Goosey</li>
-                    <li>Kan+Ade</li>
-                
-
-                   </ul>
-                   <ul className="list-disc text-left">
-
-                   <li>Coldfire</li>
-                   <li>Uncle Arnie's</li>
-                   <li>Sputnik</li>
-
-                   </ul>
-                   </div>
-                    <div className="mt-auto">
-                      <a
-                        href="#"
-                        className="inline-block mr-4 hover:bg-green-500 rounded-lg bg-green-700 px-8 py-3 text-base font-medium text-white transition hover:scale-110 hover:shadow-xl focus:outline-none focus:ring active:bg-green-200"
-                      >
-                        Save now
-                      </a>
-                    </div>
-
-                  </div>
-                  {/* content - end */}
-                  {/* image - start */}
-                  <div className="daily_deal_back order-first h-48 w-full bg-gray-700 sm:order-none sm:h-auto sm:w-1/2 lg:w-3/5">
-                  <Image
-                      src="/dail_deal.webp"
-                        width={800}
-                         height={500}
-                      placeholder="blur"
-                        blurDataURL="URL"
-                      alt="Chronic Long Beach daily deals"
-                      className="h-full w-full object-contain flex object-center"
-                    />
-                  </div>
-                  {/* image - end */}
-                </div>
-              </div>
-            </SwiperSlide>
+       
           </Swiper>
         </div>
       </div>
