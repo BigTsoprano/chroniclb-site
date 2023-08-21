@@ -53,7 +53,7 @@ export default function Test() {
   };
 
   return (
-    <div>
+    <div className="bg-slate-200">
       {/* display content */}
 
       {content &&
