@@ -21,7 +21,6 @@ export default function Home() {
   return (
     <section>
       <Hero />
-      <Test />
       <Category />
       <ProductOne />
       <ProductTwo />
