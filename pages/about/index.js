@@ -3,7 +3,7 @@ import dynamic from 'next/dynamic'
 import Image from 'next/image';
 import { NextSeo } from 'next-seo';
 
-const Gmaps = dynamic(() => import('./Gmaps'), {
+const Gmaps = dynamic(() => import('../../components/Gmaps'), {
     loading: () => <p>Loading...</p>,
     ssr: false  // Disable server-side rendering for the Google Maps component
   });

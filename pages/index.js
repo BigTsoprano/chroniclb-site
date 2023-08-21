@@ -21,7 +21,7 @@ export default function Home() {
   return (
     <section>
       <Hero />
-      <Test />
+    
       <Category />
       <ProductOne />
       <ProductTwo />
@@ -32,7 +32,6 @@ export default function Home() {
       <ProductFive />
       <DealsOne />
       <MerchSlider />
-
       <CustomerReviews />
       <EndBanner />
     </section>
