@@ -11,6 +11,16 @@ import { Navigation, Autoplay } from "swiper/modules";
 import Image from "next/image";
 
 export default function Hero() {
+  let width = 320; // for mobile devices
+  let height = (width / 16) * 9;
+
+  // Optionally, you can use conditions to set width for larger screens
+  if (typeof window !== 'undefined' && window.innerWidth > 768) { 
+    // for devices wider than 768px
+    width = 768;
+    height = (width / 16) * 9;
+  }
+
   return (
     <div className=" bg-white overflow-y-hidden">
       {/* Code block starts */}
@@ -145,8 +155,8 @@ Long Beach Local Brands !!!
                   <div className="daily_deal_back order-first h-48 w-full bg-gray-700 sm:order-none sm:h-auto sm:w-1/2 lg:w-3/5">
                     <Image
                       src="/daily_deal.webp"
-                        width={768}
-    height={432}
+                        width={width}
+    height={height}
     placeholder="blur"
     blurDataURL="/daily_deal.webp"
                   
