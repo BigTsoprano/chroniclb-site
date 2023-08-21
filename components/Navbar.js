@@ -53,7 +53,7 @@ function Navbar(props) {
     <div className="relative flex items-center justify-between">
       <div         className="inline-flex items-end">
      <Link href='/' >
-       <Image loading="lazy" alt="chronic long beach logo" placeholder="blur" blurDataURL="/chronic_leaf.png" src='/chronic_leaf.png' width={40} height={40}/>
+       <Image alt="chronic long beach logo" placeholder="blur" blurDataURL="/chronic_leaf.png" src='/chronic_leaf.png' width={40} height={40}/>
        </Link> 
         <a href="/" className="chronic_title ml-2 text-xl font-bold tracking-wide text-gray-800">
           Chronic
@@ -171,7 +171,7 @@ function Navbar(props) {
                       className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
                     >
                       <p>
-                      Features
+                      Merch
                       </p>
                     </Link>
                   </li>
@@ -183,7 +183,7 @@ function Navbar(props) {
                       className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
                     >
                       <p>
-                      Pricing
+                     Blogs
                       </p>
                     </Link>
                   </li>
@@ -206,7 +206,7 @@ function Navbar(props) {
                       aria-label="Sign up"
                       title="Sign up"
                     >
-                      Sign up
+                     Log in
                     </button>
                   </li>
                 </ul>

@@ -7,20 +7,23 @@ function NavMob(props) {
   
     const navigationItems = [
       {
-        linkName: "Dashboard",
+        linkName: "About us",
+        route: '/about'
       },
       {
-        linkName: "Metrics and analytics",
+        linkName: "FAQ",
       },
       {
-        linkName: "Multi-Channel Funnels overview",
+        linkName: "Contact us",
       },
       {
-        linkName: "User settings",
+        linkName: "Careers",
       },
+    
       {
-        linkName: "User Profile",
+        linkName: "Directions",
       },
+      
     ]
   
     useEffect(() => {
@@ -119,7 +122,7 @@ function NavMob(props) {
                    ? "bg-emerald-50 text-emerald-500"
                    : "bg-none text-slate-500"
                } flex items-start justify-start gap-2 p-2 px-5 transition-colors duration-300 hover:bg-emerald-50 hover:text-emerald-500 focus:bg-emerald-50 focus:text-emerald-600 focus:outline-none focus-visible:outline-none`}
-               href="#"
+               href={item.route}
                aria-current={index + 1 === currentItem ? "page" : "false"}
              >
                <span className="flex flex-col gap-1 overflow-hidden whitespace-nowrap">
