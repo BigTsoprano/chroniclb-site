@@ -141,7 +141,7 @@ function about() {
       <div className="mx-auto grid max-w-6xl grid-cols-1 grid-rows-[auto_1fr] gap-y-16 py-16 md:py-20 lg:grid-cols-12 lg:gap-y-20 lg:px-3 lg:pb-36 lg:py-20 xl:py-32 items-start">
         <div className="relative flex items-end lg:col-span-5 lg:row-span-2">
           <div className="relative z-10 flex w-64 mx-auto overflow-hidden md:w-80 lg:w-auto">
-            <Image alt="about chronic store" height={2000} width={1125} placeholder='blur' blurDataURL='/about_img.webp' loading='lazy' src="/about_img.webp" decoding="async" data-nimg="future" className="object-contain rounded-xl shadow-lg w-full h-1/3" />
+            <Image alt="about chronic store" height={2000} width={1125} placeholder='blur' blurDataURL='/about_img.webp' loading='lazy' src="/about_img.webp" decoding="async" data-nimg="future" className="object-cover rounded-xl shadow-lg w-full h-1/3" />
           </div>
         </div>
         <div className="relative order-first px-4 sm:px-6 lg:col-span-7 lg:pl-0 lg:pb-14 lg:pr-16 xl:pr-20">
@@ -246,7 +246,7 @@ function about() {
                 <p className="max-w-xl mt-4 text-base tracking-tight text-gray-600">
                 At Chronic Long Beach, we're more than just a dispensary – we're your trusted source for top-shelf cannabis products, from indulgent edibles to potent indicas. CNN's Sanjay Gupta hailed us as a “model dispensary,” and we proudly uphold that reputation. Led by our discerning buyer, OG Hefty, we handpick only the finest brands like Buddies, Jeeters, 710 Labs, and local gems such as Cannavis. Whether you're seeking relief or relaxation, our extensive menu boasts over 100 diverse products, including flower, vapes, edibles, and more. Quality and affordability are our watchwords, ensuring you get the best without straining your wallet. Explore our online selection or visit Chronic Dispensary for unparalleled medical marijuana offerings.                </p>
               </div>
-              <div className="flex flex-col items-center justify-center gap-3 mt-10 lg:flex-row lg:justify-start">
+              <div className="flex flex-col pb-8 items-center justify-center gap-3 mt-10 lg:flex-row lg:justify-start">
                 <a href="#" className="inline-block mr-4 hover:bg-green-500 rounded-lg bg-green-700 px-8 py-3 text-base font-medium text-white transition hover:scale-110 hover:shadow-xl focus:outline-none focus:ring active:bg-green-200">
                   Explore Cannabis
                 </a>
@@ -261,7 +261,7 @@ function about() {
 <Gmaps />
 {/* <!-- Section --> */}
 
-<div className="py-14">
+<div className="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
             <div className="max-w-screen-xl mx-auto px-4  gap-x-12 justify-between md:flex md:px-8">
                 <div className="max-w-xl">
                     <h3 className="text-gray-800font-sans text-3xl font-bold tracking-tight  sm:text-4xl sm:leading-none">

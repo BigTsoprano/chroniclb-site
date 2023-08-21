@@ -121,7 +121,7 @@ function NavDrop(props) {
         >
           {navigationItems.map((item, index) => {
             return (
-              <li className="pl-4 py-1 hover:bg-green-100 transition duration-200" key={index}>
+              <li className="pl-4 py-2 hover:bg-green-100 transition duration-200" key={index}>
                 <a className='' href={item.route} >
               <p
                     className="cta-pr-btn   bg-transparent text-green-500 font-medium  rounded-full inline-flex items-center"

@@ -1,5 +1,5 @@
 
-import React, { useRef, useState } from "react";
+import React from "react";
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
 import Link from "next/link";
@@ -215,7 +215,6 @@ Long Beach Local Brands !!!
                       height={500}
     placeholder="blur"
     blurDataURL="/dail_deal.webp"
-                      loading="lazy"
                       alt="Chronic Long Beach daily deals"
                       className="h-full w-full object-contain flex object-center"
                     />
@@ -270,7 +269,6 @@ Long Beach Local Brands !!!
                       src="/dail_deal.webp"
                         width={800}
                          height={500}
-                      loading="lazy"
                       placeholder="blur"
                         blurDataURL="URL"
                       alt="Chronic Long Beach daily deals"
