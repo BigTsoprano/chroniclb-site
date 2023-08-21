@@ -1,5 +1,6 @@
 import React from 'react'
 import {NextSeo} from 'next-seo';
+import Blogs from '@/components/Blogs';
 
 
 function blogs() {
@@ -101,6 +102,8 @@ function blogs() {
         </div>
       </div>
     </div>
+    {/*section 2*/}
+    <Blogs />
         {/*section 1*/}
             <div className="bg-white py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8">
       <div className="mx-auto max-w-screen-2xl ">
