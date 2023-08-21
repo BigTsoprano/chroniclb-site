@@ -65,7 +65,7 @@ function ProductOne() {
                     <p className="text-lg font-bold text-black truncate block capitalize">Zotix sugar cookies</p>
                     <p className="text-sm text-zinc-700">weight: 3.5gs</p>
                     <div className="flex items-center">
-                        <p className="text-lg font-semibold text-black cursor-auto my-3">$19.75</p>
+                        <p className="text-lg font-semibold text-black cursor-auto my-3">$19.95</p>
                         <del>
                             <p className="text-sm text-gray-600 cursor-auto ml-2">$29.99</p>
                         </del>
