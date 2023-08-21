@@ -144,11 +144,11 @@ Long Beach Local Brands !!!
                   {/* image - start */}
                   <div className="daily_deal_back order-first h-48 w-full bg-gray-700 sm:order-none sm:h-auto sm:w-1/2 lg:w-3/5">
                     <Image
-                      src="/dail_deal.webp"
-                        width={800}
-    height={500}
+                      src="/daily_deal.webp"
+                        width={768}
+    height={432}
     placeholder="blur"
-    blurDataURL="/dail_deal.webp"
+    blurDataURL="/daily_deal.webp"
                   
                       alt="Chronic Long Beach daily deals"
                       className="h-full w-full object-contain flex object-center"
