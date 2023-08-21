@@ -1,6 +1,8 @@
 import Layout from '@/components/Layout'
 import '@/styles/globals.css'
 import Script from 'next/script'
+import { Analytics } from '@vercel/analytics/react';
+
 import Head from 'next/head'
 
 
@@ -12,7 +14,11 @@ export default function App({ Component, pageProps }) {
 
         <title>Chroniclb | </title>
         <meta property="og:title" content="" key="title" />
-      </Head>     
+      </Head> 
+      <Body>
+
+                <Analytics />
+            </Body>    
        <Component {...pageProps} />
        
      
