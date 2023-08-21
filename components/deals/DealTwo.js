@@ -12,11 +12,11 @@ function DealTwo() {
                     </div>
                     <div className="md:w-1/2 mt-8 md:mt-0 flex justify-center md:justify-end">
                         <Image 
-                        width={500}
-                        height={900}
+                        width={400}
+                        height={1200}
                         placeholder='blur'
                         blurDataURL='/best_deals.avif'  
-                        style={{maxHeight:'250px'}}
+                        
                         src="/best_deals.avif"
                          alt="chronic long beach best deals" />
                     </div>
@@ -29,9 +29,9 @@ function DealTwo() {
                         </p>
                     </div>
                     <div className="flex justify-end md:absolute md:bottom-4 md:right-4 lg:bottom-0 lg:right-0">
-                        <Image style={{maxHeight:'150px'}} 
-                        width={500}
-                        height={500}
+                        <Image style={{maxHeight:'200px'}} 
+                        width={200}
+                        height={200}
                         placeholder='blur'
                         blurDataURL='/vape_deals.avif'
                         src="/vape_deals.avif" alt="chronic long beach best vape deals" 
