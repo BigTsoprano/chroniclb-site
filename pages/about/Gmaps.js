@@ -13,12 +13,12 @@ class Gmaps extends Component{
       
     };
   return (
-<section className='h-[50vh] max-h-[50vh] overflow-hidden'>
+<section className='h-[60vh] max-h-[60vh] overflow-hidden'>
     <div>
         <Map
         
         google = {this.props.google}
-        style={{ width:'100%',height:'50vh', }}
+        style={{ width:'100%',height:'60vh', }}
         zoom={14}
         initialCenter={{
           lat: 33.785565418811956,

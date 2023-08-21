@@ -1,4 +1,7 @@
-
+import LocationOnOutlinedIcon from '@mui/icons-material/LocationOnOutlined';
+import PhoneForwardedOutlinedIcon from '@mui/icons-material/PhoneForwardedOutlined';
+import ForwardToInboxOutlinedIcon from '@mui/icons-material/ForwardToInboxOutlined';
+import AccessTimeOutlinedIcon from '@mui/icons-material/AccessTimeOutlined';
 const Footer = () => {
    
 
@@ -26,20 +29,27 @@ const Footer = () => {
                 title="Company"
                 className="inline-flex items-center"
               >
-               <img className="h-10" src="chronic_leaf.png" />
-                <span className="ml-2 text-xl font-bold tracking-wide text-gray-100">
-                  Chroniclb
-                </span>
+               <img className="h-20" src="footer_chronic.png" />
+              
               </a>
               <div className="mt-4 lg:max-w-sm">
-                <p className="text-sm text-white">
-                  Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-                  accusantium doloremque laudantium, totam rem aperiam.
-                </p>
-                <p className="mt-4 text-sm text-white">
-                  Eaque ipsa quae ab illo inventore veritatis et quasi architecto
-                  beatae vitae dicta sunt explicabo.
-                </p>
+               <ul>
+                <li className='text-white'>
+      <LocationOnOutlinedIcon/> <span>1501 Santa Fe Ave. Long Beach, CA 90813</span>
+                </li>
+                <li className='text-white pt-2'>
+                  <a className='text-white' href="tel:+1234567890"><PhoneForwardedOutlinedIcon className='pr-1'/> (562) 676-4241</a>
+                  </li>
+                  <li className='pt-2'>
+                  <a className='text-white' href="mailto:info@chroniclb.com" ><ForwardToInboxOutlinedIcon className='pr-1'/> info@chroniclb.com
+
+                    </a>
+                  </li>
+                  <li className='text-white pt-2'>
+<AccessTimeOutlinedIcon/>  <span className='text-white'>Store Hours: 8am-9:50pm Monday - Saturday
+9am-8:50pm Sunday</span>
+                  </li>
+               </ul>
               </div>
             </div>
             <div className="grid grid-cols-2 gap-5 row-gap-8 lg:col-span-4 md:grid-cols-4">
@@ -50,10 +60,10 @@ const Footer = () => {
                 <ul className="mt-2 space-y-2">
                   <li>
                     <a
-                      href="/"
+                      href="/about"
                       className="transition-colors duration-300 text-white hover:text-teal-accent-400"
                     >
-                      blank
+                      About us
                     </a>
                   </li>
                   <li>
@@ -61,7 +71,7 @@ const Footer = () => {
                       href="/"
                       className="transition-colors duration-300 text-white hover:text-teal-accent-400"
                     >
-                        blank
+                       FAQ
                     </a>
                   </li>
                   <li>
@@ -69,7 +79,7 @@ const Footer = () => {
                       href="/"
                       className="transition-colors duration-300 text-white hover:text-teal-accent-400"
                     >
-                        blank
+Contact us
                     </a>
                   </li>
                   <li>
@@ -77,69 +87,22 @@ const Footer = () => {
                       href="/"
                       className="transition-colors duration-300 text-white hover:text-teal-accent-400"
                     >
-                        blank
-                    </a>
-                  </li>
-                </ul>
-              </div>
-              <div>
-                <p className="font-semibold tracking-wide text-white">
-                blank
-                </p>
-                <ul className="mt-2 space-y-2">
-                  <li>
-                    <a
-                      href="/"
-                      className="transition-colors duration-300 text-white hover:text-teal-accent-400"
-                    >
-                        blank
-                    </a>
-                  </li>
-                  <li>
-                    <a
-                      href="/"
-                      className="transition-colors duration-300 text-white hover:text-teal-accent-400"
-                    >
-                        blank
-                    </a>
-                  </li>
-                  <li>
-                    <a
-                      href="/"
-                      className="transition-colors duration-300 text-white hover:text-teal-accent-400"
-                    >
-                        blank
-                    </a>
-                  </li>
-                  <li>
-                    <a
-                      href="/"
-                      className="transition-colors duration-300 text-white hover:text-teal-accent-400"
-                    >
-                        blank
-                    </a>
-                  </li>
-                  <li>
-                    <a
-                      href="/"
-                      className="transition-colors duration-300 text-white hover:text-teal-accent-400"
-                    >
-                        blank
+                        Careers
                     </a>
                   </li>
                 </ul>
               </div>
               <div>
                 <p className="font-semibold tracking-wide text-white">
-                blank
-                </p>
+Shop
+             </p>
                 <ul className="mt-2 space-y-2">
                   <li>
                     <a
                       href="/"
                       className="transition-colors duration-300 text-white hover:text-teal-accent-400"
                     >
-                        blank
+                        Menu
                     </a>
                   </li>
                   <li>
@@ -147,7 +110,7 @@ const Footer = () => {
                       href="/"
                       className="transition-colors duration-300 text-white hover:text-teal-accent-400"
                     >
-                        blank
+                        Merch
                     </a>
                   </li>
                   <li>
@@ -155,7 +118,7 @@ const Footer = () => {
                       href="/"
                       className="transition-colors duration-300 text-white hover:text-teal-accent-400"
                     >
-                        blank
+                        Top picks
                     </a>
                   </li>
                   <li>
@@ -163,22 +126,15 @@ const Footer = () => {
                       href="/"
                       className="transition-colors duration-300 text-white hover:text-teal-accent-400"
                     >
-  blank
-                      </a>
-                  </li>
-                  <li>
-                    <a
-                      href="/"
-                      className="transition-colors duration-300 text-white hover:text-teal-accent-400"
-                    >
-                        blank
+                      Today's deals
                     </a>
                   </li>
+          
                 </ul>
               </div>
               <div>
-                <p className="font-semibold tracking-wide text-teal-accent-400">
-                blank
+                <p className="font-semibold tracking-wide text-white">
+                Learn
                 </p>
                 <ul className="mt-2 space-y-2">
                   <li>
@@ -186,7 +142,7 @@ const Footer = () => {
                       href="/"
                       className="transition-colors duration-300 text-white hover:text-teal-accent-400"
                     >
-                        blank
+                       Blogs
                     </a>
                   </li>
                   <li>
@@ -194,7 +150,26 @@ const Footer = () => {
                       href="/"
                       className="transition-colors duration-300 text-white hover:text-teal-accent-400"
                     >
-                        blank
+                        FAQ
+                    </a>
+                  </li>
+                 
+                </ul>
+              </div>
+              <div>
+                
+                <ul className="mt-2 space-y-2">
+                  <li>
+                  <a className="font-semibold text-white tracking-wide text-teal-accent-400">
+                Privacy Policy
+                </a>
+                  </li>
+                  <li>
+                    <a
+                      href="/"
+                      className="transition-colors duration-300 text-white hover:text-teal-accent-400"
+                    >
+                        Prop 65 Warning
                     </a>
                   </li>
                   <li>
@@ -202,17 +177,10 @@ const Footer = () => {
                       href="/"
                       className="transition-colors duration-300 text-white hover:text-teal-accent-400"
                     >
-                      Wiki
+                        C12-0000017-LIC
                     </a>
                   </li>
-                  <li>
-                    <a
-                      href="/"
-                      className="transition-colors duration-300 text-white hover:text-teal-accent-400"
-                    >
-                      Forum
-                    </a>
-                  </li>
+                 
                 </ul>
               </div>
             </div>

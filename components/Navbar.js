@@ -52,14 +52,10 @@ function Navbar(props) {
     <div className="px-4 py-5  mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8">
     <div className="relative flex items-center justify-between">
       <div         className="inline-flex items-end">
-      <a
-        href="/"
-        aria-label="Company"
-        title="Company"
-      > </a>
+     <Link href='/' >
        <Image loading="lazy" alt="chronic long beach logo" placeholder="blur" blurDataURL="/chronic_leaf.png" src='/chronic_leaf.png' width={40} height={40}/>
-        
-        <a className="chronic_title ml-2 text-xl font-bold tracking-wide text-gray-800">
+       </Link> 
+        <a href="/" className="chronic_title ml-2 text-xl font-bold tracking-wide text-gray-800">
           Chronic
           <span className='italic pl-4 text-base text-green-700'>Long Beach</span>
         </a>
@@ -77,7 +73,7 @@ function Navbar(props) {
         </li>
         <li>
           <a
-            href="/"
+            href="/#merch"
             aria-label="Product pricing"
             title="Product pricing"
             className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
@@ -87,12 +83,12 @@ function Navbar(props) {
         </li>
         <li>
           <a
-            href="/"
-            aria-label="About us"
-            title="About us"
+            href="/blogs"
+            aria-label="blogs"
+            title="Chronic blogs"
             className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
           >
-            Log in
+           Blogs
           </a>
         </li>
         <li>
@@ -102,7 +98,7 @@ function Navbar(props) {
             aria-label="Sign up"
             title="Sign up"
           >
-            Sign up
+            Log in
           </button>
         </li>
       </ul>

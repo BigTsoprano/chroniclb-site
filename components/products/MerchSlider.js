@@ -12,7 +12,7 @@ function MerchSlider() {
   return (
     <>
     {/*<!-- Component: Carousel with controls outside --> */}
-    <div className="px-4 pt-8 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 ">
+    <div id="merch" className="px-4 pt-8 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 ">
 
     <div className="flex flex-col  lg:justify-between lg:flex-row ">
         <h2 className="max-w-lg mb-5 font-sans text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl sm:leading-none md:mb-6 group">

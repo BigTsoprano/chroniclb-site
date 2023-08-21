@@ -1,26 +1,31 @@
 import React, { useState, useEffect, useRef } from "react"
+import Link from 'next/link';
 
 function NavDrop(props) {
     const [isOpen, setIsOpen] = useState(false)
   const [currentItem, setCurrentItem] = useState(null)
   const wrapperRef = useRef(null)
-
+  const buttonRef = useRef(null);
+  const menuRef = useRef(null);
   const navigationItems = [
     {
       linkName: "About us",
+      route: '/about'
     },
     {
       linkName: "FAQ",
     },
     {
-      linkName: "Blog",
+      linkName: "Contact us",
     },
     {
       linkName: "Careers",
     },
+  
     {
-      linkName: "Contact us",
+      linkName: "Directions",
     },
+    
   ]
 
   useEffect(() => {
@@ -32,16 +37,20 @@ function NavDrop(props) {
 
   useEffect(() => {
     function handleClickOutside(event) {
-      if (wrapperRef.current && !wrapperRef.current.contains(event.target)) {
-        setIsOpen(false)
-      }
+        // If the click is not within the button and not within the dropdown menu, then close the dropdown.
+        if (
+            buttonRef.current && !buttonRef.current.contains(event.target) &&
+            menuRef.current && !menuRef.current.contains(event.target)
+        ) {
+            setIsOpen(false);
+        }
     }
-    document.addEventListener("mousedown", handleClickOutside)
-    return () => {
-      document.removeEventListener("mousedown", handleClickOutside)
-    }
-  }, [wrapperRef])
 
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => {
+        document.removeEventListener("mousedown", handleClickOutside);
+    }
+}, []);
   const handleKeyDown = e => {
     if (isOpen) {
       e.preventDefault()
@@ -79,7 +88,7 @@ function NavDrop(props) {
           className="inline-flex  items-center justify-center  whitespace-nowrap rounded   font-medium  text-white   "
           onClick={() => setIsOpen(!isOpen)}
           aria-expanded={isOpen ? " true" : "false"}
-          ref={wrapperRef}
+          ref={buttonRef}
         >
           <span className="pr-2">Resources</span>
           <span className="relative only:-mx-5">
@@ -105,27 +114,29 @@ function NavDrop(props) {
         </a>
         {/*  <!--  End Dropdown trigger --> */}
         {/*  <!-- Start Menu list --> */}
-        <ul
+        <ul ref={menuRef}
           className={`${
             isOpen ? "flex" : "hidden"
           } nav_dropdown absolute top-full z-10 mt-1 flex w-72 transition duration-300 list-none flex-col rounded-lg  bg-white py-2 shadow-md shadow-slate-500/10 `}
         >
           {navigationItems.map((item, index) => {
             return (
-              <li key={index}>
-                <a
-                  className={` ${
-                    index === currentItem
-                      ? "bg-emerald-50 text-emerald-500"
-                      : "bg-none text-slate-500"
-                  } flex items-start justify-start gap-2 p-2 px-5 transition-colors duration-300 hover:bg-emerald-50 hover:text-emerald-500 focus:bg-emerald-50 focus:text-emerald-600 focus:outline-none focus-visible:outline-none`}
-                  href="#"
-                  aria-current={index + 1 === currentItem ? "page" : "false"}
-                >
-                  <span className="flex flex-col gap-1 overflow-hidden whitespace-nowrap">
-                    <span className="truncate text-black leading-5">{item.linkName}</span>
-                  </span>
-                </a>
+              <li className="pl-4 py-1 hover:bg-green-100 transition duration-200" key={index}>
+                <a className='' href={item.route} >
+              <p
+                    className="cta-pr-btn   bg-transparent text-green-500 font-medium  rounded-full inline-flex items-center"
+                   >
+  <span className="truncate text-black font-medium leading-5">{item.linkName}</span>
+                      <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 ml-1 duration-150" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
+                    </svg>
+                </p>
+                <style jsx>{`
+                .cta-pr-btn:hover svg {
+                    transform: translateX(5px)
+                }
+            `}</style>
+            </a>
               </li>
             )
           })}

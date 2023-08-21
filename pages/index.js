@@ -16,10 +16,7 @@ import DealThree from "@/components/deals/DealThree";
 import Category from "@/components/Category";
 import ProductFour from "@/components/products/ProductFour";
 import ProductFive from "@/components/products/ProductFive";
-const Gmaps = dynamic(() => import('@/components/Gmaps'), {
-  loading: () => <p>Loading...</p>,
-  ssr: false  // Disable server-side rendering for the Google Maps component
-});
+
 
 
 export default function Home() {
@@ -38,9 +35,8 @@ export default function Home() {
     <ProductFive/>
     <DealsOne/>
     <MerchSlider/>
-    <Blogs/>
+  
     <CustomerReviews/>
-    <Gmaps/>
     <EndBanner/>
 
  

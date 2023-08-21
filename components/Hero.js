@@ -2,7 +2,7 @@
 import React, { useRef, useState } from "react";
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
-
+import Link from "next/link";
 // Import Swiper styles
 import "swiper/css";
 import "swiper/css/navigation";
@@ -50,8 +50,8 @@ export default function Hero() {
         /> */}
         <div className="w-11/12 z-10 mt-10 sm:w-2/3 mb-5 sm:mb-10">
           <h1 className="font-sans z-10 text-3xl text-center font-bold tracking-tight text-white sm:text-4xl sm:leading-none">
-            Welcome to Chronic Long
-            Beach
+            Welcome to <span class="relative before:absolute before:bg-green-700 before:bottom-0 before:left-0 before:h-full before:w-full before:origin-bottom before:scale-y-[0.35] hover:before:scale-y-100 before:transition-transform before:ease-in-out before:duration-500"><span class="relative">Chronic</span></span> Long
+            Beach Dispensary
           </h1>
           
           <p className="text-zinc-200 mt-4 text-center text-base ">
@@ -65,10 +65,11 @@ export default function Hero() {
         </div>
         <div className="flex z-10 justify-center items-center mb-10 sm:mb-20">
           <button className="inline-block mr-4 hover:bg-green-500 rounded-lg bg-green-700 px-8 py-3 text-base font-medium text-white transition hover:scale-110 hover:shadow-xl focus:outline-none focus:ring active:bg-green-200">
-            Shop now
+            Shop Cannabis
           </button>
+          <Link href="/about">
           <button  className="group relative inline-flex items-center overflow-hidden rounded-lg border border-current px-7 py-3 text-green-600 hover:text-green-500 focus:outline-none focus:ring active:text-green-200"
-  href="/download"
+
 >
   <span className="absolute -end-full transition-all group-hover:end-4">
     <svg
@@ -91,6 +92,7 @@ export default function Hero() {
     Learn more
   </span>
           </button>
+          </Link>
         </div>
       </div>
       <div className=" mx-auto px-4 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 flex z-10 justify-center md:-mt-60 mb-10 -mt-20 sm:-mt-40">
