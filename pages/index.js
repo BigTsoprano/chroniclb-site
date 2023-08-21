@@ -1,6 +1,4 @@
-
-import dynamic from 'next/dynamic';
-
+import dynamic from "next/dynamic";
 
 import Hero from "@/components/Hero";
 import MerchSlider from "@/components/products/MerchSlider";
@@ -17,30 +15,25 @@ import Category from "@/components/Category";
 import ProductFour from "@/components/products/ProductFour";
 import ProductFive from "@/components/products/ProductFive";
 
-
+import Test from "@/components/test";
 
 export default function Home() {
- 
-
   return (
-   <section>
-    <Hero/>
-    <Category/>
-    <ProductOne/>
-    <ProductTwo/>
-    <ProductThree/>
-    <DealTwo/>
-    <ProductFour/>
-    <DealThree/>
-    <ProductFive/>
-    <DealsOne/>
-    <MerchSlider/>
-  
-    <CustomerReviews/>
-    <EndBanner/>
+    <section>
+      <Hero />
+      <Category />
+      <ProductOne />
+      <ProductTwo />
+      <ProductThree />
+      <DealTwo />
+      <ProductFour />
+      <DealThree />
+      <ProductFive />
+      <DealsOne />
+      <MerchSlider />
 
- 
-   </section>
+      <CustomerReviews />
+      <EndBanner />
+    </section>
   );
 }
-

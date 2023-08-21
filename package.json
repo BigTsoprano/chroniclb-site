@@ -19,7 +19,7 @@
     "@next/font": "13.1.6",
     "@tailwindcss/jit": "^0.1.18",
     "@vercel/analytics": "^1.0.2",
-    "firebase": "^8.5.0",
+    "firebase": "^9.23.0",
     "framer-motion": "^10.16.0",
     "google-maps-react": "^2.0.6",
     "next": "13.1.6",

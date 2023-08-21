@@ -1,4 +1,3 @@
-
 import React from "react";
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -15,7 +14,7 @@ export default function Hero() {
   let height = (width / 16) * 9;
 
   // Optionally, you can use conditions to set width for larger screens
-  if (typeof window !== 'undefined' && window.innerWidth > 768) { 
+  if (typeof window !== "undefined" && window.innerWidth > 768) {
     // for devices wider than 768px
     width = 768;
     height = (width / 16) * 9;
@@ -25,16 +24,12 @@ export default function Hero() {
     <div className=" bg-white overflow-y-hidden">
       {/* Code block starts */}
 
-      <div
-     
-        className="w-full min-w-full top-0 relative h-full pt-8 mx-auto  bg-zinc-800   flex flex-col items-center  sm:pt-24 pb-24 sm:pb-32 md:pb-48 lg:pb-56 xl:pb-64"
-      >
+      <div className="w-full min-w-full top-0 relative h-full pt-8 mx-auto  bg-zinc-800   flex flex-col items-center  sm:pt-24 pb-24 sm:pb-32 md:pb-48 lg:pb-56 xl:pb-64">
         <div className="hero_backdrop"></div>
 
         <MuxVideo
           playbackId="00B02rzv6t00nBzaJdPPdlSmnNkvhbBN974BZFKFK00lAAI"
           className="hero_video rounded-none h-full w-full object-cover z-0 absolute top-0"
-      
           metadata={{
             video_id: "video-id-12346",
             video_title: "demo_video",
@@ -48,13 +43,16 @@ export default function Hero() {
           playsInline
           loop
         ></MuxVideo>
-   
+
         <div className="w-11/12 z-10 mt-10 sm:w-2/3 mb-5 sm:mb-10">
           <h1 className="font-sans z-10 text-3xl text-center font-bold tracking-tight text-white sm:text-4xl sm:leading-none">
-            Welcome to <span class="relative before:absolute before:bg-green-700 before:bottom-0 before:left-0 before:h-full before:w-full before:origin-bottom before:scale-y-[0.35] hover:before:scale-y-100 before:transition-transform before:ease-in-out before:duration-500"><span class="relative">Chronic</span></span> Long
-            Beach Dispensary
+            Welcome to{" "}
+            <span class="relative before:absolute before:bg-green-700 before:bottom-0 before:left-0 before:h-full before:w-full before:origin-bottom before:scale-y-[0.35] hover:before:scale-y-100 before:transition-transform before:ease-in-out before:duration-500">
+              <span class="relative">Chronic</span>
+            </span>{" "}
+            Long Beach Dispensary
           </h1>
-          
+
           <p className="text-zinc-200 mt-4 text-center text-base ">
             Founded in 2010, Chronic Long Beach is one of Long Beach’s original
             medical cannabis dispensaries. At Chronic Long Beach, we’ve made it
@@ -69,38 +67,33 @@ export default function Hero() {
             Shop Cannabis
           </button>
           <Link href="/about">
-          <button  className="group relative inline-flex items-center overflow-hidden rounded-lg border border-current px-7 py-3 text-green-600 hover:text-green-500 focus:outline-none focus:ring active:text-green-200"
+            <button className="group relative inline-flex items-center overflow-hidden rounded-lg border border-current px-7 py-3 text-green-600 hover:text-green-500 focus:outline-none focus:ring active:text-green-200">
+              <span className="absolute -end-full transition-all group-hover:end-4">
+                <svg
+                  className="h-5 w-5 rtl:rotate-180"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth="2"
+                    d="M17 8l4 4m0 0l-4 4m4-4H3"
+                  />
+                </svg>
+              </span>
 
->
-  <span className="absolute -end-full transition-all group-hover:end-4">
-    <svg
-      className="h-5 w-5 rtl:rotate-180"
-      xmlns="http://www.w3.org/2000/svg"
-      fill="none"
-      viewBox="0 0 24 24"
-      stroke="currentColor"
-    >
-      <path
-        strokeLinecap="round"
-        strokeLinejoin="round"
-        strokeWidth="2"
-        d="M17 8l4 4m0 0l-4 4m4-4H3"
-      />
-    </svg>
-  </span>
-
-  <span className="text-base font-medium transition-all group-hover:me-4">
-    Learn more
-  </span>
-          </button>
+              <span className="text-base font-medium transition-all group-hover:me-4">
+                Learn more
+              </span>
+            </button>
           </Link>
         </div>
       </div>
       <div className=" mx-auto px-4 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 flex z-10 justify-center md:-mt-60 mb-10 -mt-20 sm:-mt-40">
-        <div
-          
-          className="relative z-10 min-w-full max-w-full"
-        >
+        <div className="relative z-10 min-w-full max-w-full">
           <Swiper
             rewind={true}
             navigation={true}
@@ -118,29 +111,23 @@ export default function Hero() {
                   {/* content - start */}
                   <div className="flex w-full flex-col p-4 sm:w-1/2 sm:p-8 lg:w-2/5">
                     <h2 className="mb-4 text-xl  font-bold text-black md:text-2xl lg:text-4xl">
-                    "Locals Only"
-                                          <br />
-                     
-Long Beach Local Brands !!! 
-          15 % off 
+                      "Locals Only"
+                      <br />
+                      Long Beach Local Brands !!! 15 % off
                     </h2>
-                    <div  className=" flex flex-row px-2 items-baseline justify-center">
-                   <ul className="mb-8 list-disc max-w-md text-gray-9 mr-8   text-left">
-                    <li>Top Shelf Cultivation</li>
-                    <li>Clone Guy</li>
-                    <li>Lucy Goosey</li>
-                    <li>Kan+Ade</li>
-                
-
-                   </ul>
-                   <ul className="list-disc text-left">
-
-                   <li>Coldfire</li>
-                   <li>Uncle Arnie's</li>
-                   <li>Sputnik</li>
-
-                   </ul>
-                   </div>
+                    <div className=" flex flex-row px-2 items-baseline justify-center">
+                      <ul className="mb-8 list-disc max-w-md text-gray-9 mr-8   text-left">
+                        <li>Top Shelf Cultivation</li>
+                        <li>Clone Guy</li>
+                        <li>Lucy Goosey</li>
+                        <li>Kan+Ade</li>
+                      </ul>
+                      <ul className="list-disc text-left">
+                        <li>Coldfire</li>
+                        <li>Uncle Arnie's</li>
+                        <li>Sputnik</li>
+                      </ul>
+                    </div>
                     <div className="mt-auto">
                       <a
                         href="#"
@@ -155,11 +142,10 @@ Long Beach Local Brands !!!
                   <div className="daily_deal_back order-first h-48 w-full bg-gray-700 sm:order-none sm:h-auto sm:w-1/2 lg:w-3/5">
                     <Image
                       src="/daily_deal.webp"
-                        width={width}
-    height={height}
-    placeholder="blur"
-    blurDataURL="/daily_deal.webp"
-                  
+                      width={width}
+                      height={height}
+                      placeholder="blur"
+                      blurDataURL="/daily_deal.webp"
                       alt="Chronic Long Beach daily deals"
                       className="h-full w-full object-contain flex object-center"
                     />
@@ -168,8 +154,6 @@ Long Beach Local Brands !!!
                 </div>
               </div>
             </SwiperSlide>
-  
-       
           </Swiper>
         </div>
       </div>
