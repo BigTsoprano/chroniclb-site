@@ -155,8 +155,8 @@ Long Beach Local Brands !!!
                         width={800}
     height={500}
     placeholder="blur"
-    blurDataURL="URL"
-                      loading="lazy"
+    blurDataURL="/dail_deal.webp"
+                  
                       alt="Chronic Long Beach daily deals"
                       className="h-full w-full object-contain flex object-center"
                     />

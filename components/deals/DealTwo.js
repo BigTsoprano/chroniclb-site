@@ -13,7 +13,7 @@ function DealTwo() {
                     <div className="md:w-1/2 mt-8 md:mt-0 flex justify-center md:justify-end">
                         <Image 
                         width={500}
-                        height={700}
+                        height={900}
                         placeholder='blur'
                         blurDataURL='/best_deals.avif'  
                         style={{maxHeight:'250px'}}
