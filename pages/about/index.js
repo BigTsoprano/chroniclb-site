@@ -1,6 +1,8 @@
 import React from 'react'
 import dynamic from 'next/dynamic'
 import Image from 'next/image';
+import { NextSeo } from 'next-seo';
+
 const Gmaps = dynamic(() => import('./Gmaps'), {
     loading: () => <p>Loading...</p>,
     ssr: false  // Disable server-side rendering for the Google Maps component
@@ -9,6 +11,23 @@ const Gmaps = dynamic(() => import('./Gmaps'), {
 function about() {
   return (
     <section>
+            <NextSeo
+        title="About Chronic Long Beach"
+        description="Learn more about Chronic Long Beach, the leading cannabis dispensary in Southern California."
+        openGraph={{
+          title: 'About Chronic Long Beach',
+          description: 'Learn more about Chronic Long Beach, the leading cannabis dispensary in Southern California.',
+          images: [
+            {
+              url: '/about_img.webp',
+              width: 1125,
+              height: 2000,
+              alt: 'About Chronic Store',
+            },
+            // You can include other images here
+          ],
+        }}
+      />
     <div className="relative  ">
     <div className="hero_backdrop2"></div>
     <Image

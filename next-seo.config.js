@@ -1,5 +1,5 @@
 const SEO = {
-  defaultTitle: "Chroniclb | Premier Long Beach Dispensary",
+  defaultTitle: "Chronic Long Beach | Best Long Beach Dispensary",
   description: "Chroniclb is a leading dispensary in Long Beach offering a wide range of cannabis products to suit every customer's needs. Visit us today!",
   canonical: "https://ogchronic.com",
   openGraph: {

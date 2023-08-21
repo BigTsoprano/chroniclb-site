@@ -1,8 +1,42 @@
 import React from 'react'
+import {NextSeo} from 'next-seo';
+
 
 function blogs() {
+
   return (
     <section >
+         <NextSeo
+            title="Chronic Long Beach | Blogs"
+            description="Explore the various benefits of cannabis products, from health to relaxation, in this comprehensive guide by Chronic Long Beach."
+            canonical="https://www.ogchronic.com/blogs"
+            openGraph={{
+                type: 'article',
+                article: {
+                    publishedTime: '2022-06-21T23:04:13Z',
+                    modifiedTime: '2022-06-23T15:15:00Z',
+                    authors: [
+                        'https://www.ogchronic.com/authors/jane-doe',
+                        'https://www.ogchronic.com/authors/john-doe',
+                    ],
+                    tags: ['Cannabis Benefits', 'Health and Wellness', 'Chronic LB'],
+                },
+                url: 'https://www.ogchronic.com/blogs',
+                images: [
+                    {
+                        url: 'https://www.ogchronic.com/blog-images/benefits-of-cannabis-cover.jpg',
+                        width: 850,
+                        height: 650,
+                        alt: 'A variety of cannabis products displayed on a table.',
+                    },
+                ],
+                site_name: 'Chronic Long Beach Blog'
+            }}
+        />
+
+        
+        
+        
         {/*section 1*/}
         <div className="relative bg-black">
       <div className="absolute inset-x-0 bottom-0">
